@@ -1,6 +1,20 @@
 import { initializeGallery } from '../../assets/js/loadImages.js';
 
 const images = {
+    'Ormingemedeln' : ['250412-Orminge_medeln-1', '250412-Orminge_medeln-2', '250412-Orminge_medeln-3', '250412-Orminge_medeln-4', '250412-Orminge_medeln-5', '250412-Orminge_medeln-6', 
+        '250412-Orminge_medeln-7', '250412-Orminge_medeln-8', '250412-Orminge_medeln-9', '250412-Orminge_medeln-10', '250412-Orminge_medeln-11', '250412-Orminge_medeln-12', 
+        '250412-Orminge_medeln-13', '250412-Orminge_medeln-14', '250412-Orminge_medeln-15', '250412-Orminge_medeln-16', '250412-Orminge_medeln-17', '250412-Orminge_medeln-18', 
+        '250412-Orminge_medeln-19', '250412-Orminge_medeln-20', '250412-Orminge_medeln-21', '250412-Orminge_medeln-22', '250412-Orminge_medeln-23', '250412-Orminge_medeln-24', 
+        '250412-Orminge_medeln-25', '250412-Orminge_medeln-26', '250412-Orminge_medeln-27', '250412-Orminge_medeln-28', '250412-Orminge_medeln-29', '250412-Orminge_medeln-30', 
+        '250412-Orminge_medeln-31', '250412-Orminge_medeln-32', '250412-Orminge_medeln-33', '250412-Orminge_medeln-34', '250412-Orminge_medeln-35', '250412-Orminge_medeln-36', 
+        '250412-Orminge_medeln-37', '250412-Orminge_medeln-38', '250412-Orminge_medeln-39', '250412-Orminge_medeln-40', '250412-Orminge_medeln-41', '250412-Orminge_medeln-42', 
+        '250412-Orminge_medeln-43', '250412-Orminge_medeln-44', '250412-Orminge_medeln-45', '250412-Orminge_medeln-47', '250412-Orminge_medeln-46', '250412-Orminge_medeln-48', 
+        '250412-Orminge_medeln-49', '250412-Orminge_medeln-50', '250412-Orminge_medeln-51', '250412-Orminge_medeln-52', '250412-Orminge_medeln-53', '250412-Orminge_medeln-54', 
+        '250412-Orminge_medeln-55', '250412-Orminge_medeln-56', '250412-Orminge_medeln-58', '250412-Orminge_medeln-57', '250412-Orminge_medeln-59', '250412-Orminge_medeln-60', 
+        '250412-Orminge_medeln-61', '250412-Orminge_medeln-62', '250412-Orminge_medeln-63', '250412-Orminge_medeln-64', '250412-Orminge_medeln-65', '250412-Orminge_medeln-66', 
+        '250412-Orminge_medeln-67', '250412-Orminge_medeln-68', '250412-Orminge_medeln-69', '250412-Orminge_medeln-70', '250412-Orminge_medeln-71', '250412-Orminge_medeln-72', 
+        '250412-Orminge_medeln-73', '250412-Orminge_medeln-74'],
+
     'Attunda medeldistans' : ['250406-Attunda_medeln-2', '250406-Attunda_medeln-1', '250406-Attunda_medeln-3', '250406-Attunda_medeln-4', '250406-Attunda_medeln-5', '250406-Attunda_medeln-6', 
         '250406-Attunda_medeln-7', '250406-Attunda_medeln-8', '250406-Attunda_medeln-9', '250406-Attunda_medeln-10', '250406-Attunda_medeln-11', '250406-Attunda_medeln-12', 
         '250406-Attunda_medeln-13', '250406-Attunda_medeln-15', '250406-Attunda_medeln-14', '250406-Attunda_medeln-16', '250406-Attunda_medeln-17', '250406-Attunda_medeln-18', 
