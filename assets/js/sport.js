@@ -1,6 +1,17 @@
 import { initializeGallery } from '../../assets/js/loadImages.js';
 
 const images = {
+    'Prästtomtadubbeln' : ['250420-Prästtomtadubbeln-1', '250420-Prästtomtadubbeln-2', '250420-Prästtomtadubbeln-3', '250420-Prästtomtadubbeln-4', '250420-Prästtomtadubbeln-6', 
+        '250420-Prästtomtadubbeln-5', '250420-Prästtomtadubbeln-7', '250420-Prästtomtadubbeln-8', '250420-Prästtomtadubbeln-9', '250420-Prästtomtadubbeln-10', 
+        '250420-Prästtomtadubbeln-11', '250420-Prästtomtadubbeln-12', '250420-Prästtomtadubbeln-13', '250420-Prästtomtadubbeln-14', '250420-Prästtomtadubbeln-15', 
+        '250420-Prästtomtadubbeln-16', '250420-Prästtomtadubbeln-17', '250420-Prästtomtadubbeln-18', '250420-Prästtomtadubbeln-19', '250420-Prästtomtadubbeln-20', 
+        '250420-Prästtomtadubbeln-22', '250420-Prästtomtadubbeln-21', '250420-Prästtomtadubbeln-23', '250420-Prästtomtadubbeln-24', '250420-Prästtomtadubbeln-25', 
+        '250420-Prästtomtadubbeln-26', '250420-Prästtomtadubbeln-27', '250420-Prästtomtadubbeln-28', '250420-Prästtomtadubbeln-29', '250420-Prästtomtadubbeln-30', 
+        '250420-Prästtomtadubbeln-31', '250420-Prästtomtadubbeln-33', '250420-Prästtomtadubbeln-34', '250420-Prästtomtadubbeln-32', '250420-Prästtomtadubbeln-36', 
+        '250420-Prästtomtadubbeln-35', '250420-Prästtomtadubbeln-37', '250420-Prästtomtadubbeln-39', '250420-Prästtomtadubbeln-38', '250420-Prästtomtadubbeln-40', 
+        '250420-Prästtomtadubbeln-41', '250420-Prästtomtadubbeln-42', '250420-Prästtomtadubbeln-43', '250420-Prästtomtadubbeln-44', '250420-Prästtomtadubbeln-45', 
+        '250420-Prästtomtadubbeln-46', '250420-Prästtomtadubbeln-47', '250420-Prästtomtadubbeln-49', '250420-Prästtomtadubbeln-48'],
+
     'Stigtomtakavlen': ['250418-Stigtomtakavlen-2', '250418-Stigtomtakavlen-3', '250418-Stigtomtakavlen-4', '250418-Stigtomtakavlen-1', '250418-Stigtomtakavlen-5', '250418-Stigtomtakavlen-6',
         '250418-Stigtomtakavlen-7', '250418-Stigtomtakavlen-8', '250418-Stigtomtakavlen-9', '250418-Stigtomtakavlen-11', '250418-Stigtomtakavlen-10', '250418-Stigtomtakavlen-12',
         '250418-Stigtomtakavlen-13', '250418-Stigtomtakavlen-15', '250418-Stigtomtakavlen-14', '250418-Stigtomtakavlen-16', '250418-Stigtomtakavlen-17', '250418-Stigtomtakavlen-18',
