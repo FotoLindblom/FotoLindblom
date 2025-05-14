@@ -1,0 +1,183 @@
+section#image-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section#image-container img.portrait {
+    object-fit: none;
+    width: calc(50vw - 30px);
+    height: auto;
+    object-fit: contain;
+}
+
+section#image-container img.landscape {
+    object-fit: none;
+    width: calc(100vw - 50px);
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    section#image-container img.landscape {
+        width: calc(50vw - 50px);
+    }
+  
+    section#image-container img.portrait {
+        width: calc(25vw - 30px);
+    }
+}
+
+section#filters {
+    position: relative;
+}
+
+div#filter-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: rgb(29, 29, 29);
+    padding: 0 50px 0 40px;
+}
+
+div#filter-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+.filter-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-button.left {
+    left: 0;
+  }
+
+.filter-button.right {
+right: 0;
+}
+
+span.filter {
+    margin: 10px 0 10px 10px;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+span#active {
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* order: -1; */
+}
+
+
+section.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+div.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+img#carouselImage {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+span.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+span.close:hover {
+    cursor: pointer;
+}
+
+a.download {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+a.download img {
+    width: 30px;
+}
+
+
+@media (min-aspect-ratio: 1/1) {
+    span.close {
+        top: 10px;
+        right: 45px;
+    }
+    a.download {
+        top: 20px;
+        left: 45px;
+    }
+}
+
+
+a.prev, a.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a.next {
+    right: 0;
+}
+
+a.prev:hover, a.next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.3s;
+}

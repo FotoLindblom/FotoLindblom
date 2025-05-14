@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+section:first-child{
+    margin-top: 0;
+}
+
+
+section a {
+    display: inline-block;
+    margin-top: 75%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+}
+
+section#sports {
+    background-image: url("../images/PlaceholderCategory.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+section#wildlife {
+    background-image: url("../images/PlaceholderCategory.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Lindblom</title>
+    <script src="assets/js/headerFooter.js" defer></script>
+    <script src="assets/js/sport.js" type="module"></script>
+    <script src="assets/js/scrollButton.js"></script>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/sports.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <a class="download" href="" download><img src="assets/images/download.png" alt="download"></a>
+        
+        <div class="carousel"><img id="carouselImage" src="" alt="Carousel Image"></div>
+        
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </section>
+    
+    <section id="filters">
+        <button class="filter-button left" id="scrollLeftButton" onclick="scrollLeftAction()">&#10094;</button>
+        <div id="filter-container">
+
+        </div>
+        <button class="filter-button right" id="scrollRightButton" onclick="scrollRightAction()">&#10095;</button>
+    </section>
+
+    <main>
+        <section id="image-container"></section>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>
