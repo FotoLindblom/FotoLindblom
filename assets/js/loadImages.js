@@ -101,7 +101,7 @@ export const initializeGallery = (images, path) => {
 
         const loadImage = (index) => {
             modalImg.src = images[index].src;
-            downloadBtn.href = images[index].src.replace('mid-res', 'high-res').replace('.avif', '.jpg');
+            downloadBtn.href = images[index].src.replace("mid-res", "high-res").replace(".avif", ".jpg");
         };
 
         images.forEach((img, index) => {
