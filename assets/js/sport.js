@@ -1,7 +1,7 @@
 import { initializeGallery } from "../../assets/js/loadImages.js";
 
 async function loadJSON() {
-      const response = await fetch('../../assets/js/images.json');
+      const response = await fetch("../../assets/js/images.json");
       const data = await response.json();
       return data;
     }
