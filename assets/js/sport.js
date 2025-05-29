@@ -1,6 +1,20 @@
 import { initializeGallery } from "../../assets/js/loadImages.js";
 
 const images = {
+    'Swedish League #5': ['250529-SL5_Sprint-1', '250529-SL5_Sprint-2', '250529-SL5_Sprint-3', '250529-SL5_Sprint-4', '250529-SL5_Sprint-5', 
+        '250529-SL5_Sprint-6', '250529-SL5_Sprint-7', '250529-SL5_Sprint-8', '250529-SL5_Sprint-9', '250529-SL5_Sprint-10', 
+        '250529-SL5_Sprint-11', '250529-SL5_Sprint-12', '250529-SL5_Sprint-13', '250529-SL5_Sprint-14', '250529-SL5_Sprint-15', 
+        '250529-SL5_Sprint-16', '250529-SL5_Sprint-17', '250529-SL5_Sprint-18', '250529-SL5_Sprint-19', '250529-SL5_Sprint-20', 
+        '250529-SL5_Sprint-21', '250529-SL5_Sprint-22', '250529-SL5_Sprint-23', '250529-SL5_Sprint-24', '250529-SL5_Sprint-25', 
+        '250529-SL5_Sprint-26', '250529-SL5_Sprint-27', '250529-SL5_Sprint-28', '250529-SL5_Sprint-29', '250529-SL5_Sprint-30', 
+        '250529-SL5_Sprint-31', '250529-SL5_Sprint-32', '250529-SL5_Sprint-33', '250529-SL5_Sprint-34', '250529-SL5_Sprint-35', 
+        '250529-SL5_Sprint-36', '250529-SL5_Sprint-37', '250529-SL5_Sprint-38', '250529-SL5_Sprint-39', '250529-SL5_Sprint-40', 
+        '250529-SL5_Sprint-41', '250529-SL5_Sprint-42', '250529-SL5_Sprint-43', '250529-SL5_Sprint-44', '250529-SL5_Sprint-45', 
+        '250529-SL5_Sprint-46', '250529-SL5_Sprint-47', '250529-SL5_Sprint-48', '250529-SL5_Sprint-49', '250529-SL5_Sprint-50', 
+        '250529-SL5_Sprint-51', '250529-SL5_Sprint-52', '250529-SL5_Sprint-53', '250529-SL5_Sprint-54', '250529-SL5_Sprint-55', 
+        '250529-SL5_Sprint-56', '250529-SL5_Sprint-57', '250529-SL5_Sprint-58', '250529-SL5_Sprint-59', '250529-SL5_Sprint-60', 
+        '250529-SL5_Sprint-61', '250529-SL5_Sprint-62', '250529-SL5_Sprint-63', '250529-SL5_Sprint-64', '250529-SL5_Sprint-65'],
+
     'Stockholm City Cup, #2': ['250521_SCC2-1', '250521_SCC2-2', '250521_SCC2-3', '250521_SCC2-4', '250521_SCC2-5', '250521_SCC2-6', 
         '250521_SCC2-7', '250521_SCC2-8', '250521_SCC2-9', '250521_SCC2-10', '250521_SCC2-11', '250521_SCC2-12', '250521_SCC2-13', 
         '250521_SCC2-14', '250521_SCC2-15', '250521_SCC2-16', '250521_SCC2-17', '250521_SCC2-18', '250521_SCC2-19', '250521_SCC2-20', 
