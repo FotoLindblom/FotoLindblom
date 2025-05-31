@@ -15,7 +15,7 @@ def group_and_sort_files(directory):
         if os.path.isfile(os.path.join(directory, filename)):
             # Group by the part before the first '-'
             key = filename.split('-', 1)[0]
-            file_dict[key].append(filename)
+            file_dict[key].append(filename.split('.')[0])
 
     # Sort each list by the number after the last '-'
     for key in file_dict:
