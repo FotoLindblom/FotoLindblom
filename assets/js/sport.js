@@ -1,6 +1,22 @@
 import { initializeGallery } from "../../assets/js/loadImages.js";
 
 const images = {
+    'Swedish League #7': ['250601-SL7-1', '250601-SL7-2', '250601-SL7-3', '250601-SL7-4', '250601-SL7-5', '250601-SL7-6', '250601-SL7-7', '250601-SL7-8', '250601-SL7-9', 
+        '250601-SL7-10', '250601-SL7-11', '250601-SL7-12', '250601-SL7-13', '250601-SL7-14', '250601-SL7-15', '250601-SL7-16', '250601-SL7-17', '250601-SL7-18', 
+        '250601-SL7-19', '250601-SL7-20', '250601-SL7-21', '250601-SL7-22', '250601-SL7-23', '250601-SL7-24', '250601-SL7-25', '250601-SL7-26', '250601-SL7-27', 
+        '250601-SL7-28', '250601-SL7-29', '250601-SL7-30', '250601-SL7-31', '250601-SL7-32', '250601-SL7-33', '250601-SL7-34', '250601-SL7-35', '250601-SL7-36', 
+        '250601-SL7-37', '250601-SL7-38', '250601-SL7-39', '250601-SL7-40', '250601-SL7-41', '250601-SL7-42', '250601-SL7-43', '250601-SL7-44', '250601-SL7-45', 
+        '250601-SL7-46', '250601-SL7-47', '250601-SL7-48', '250601-SL7-49', '250601-SL7-50', '250601-SL7-51', '250601-SL7-52', '250601-SL7-53', '250601-SL7-54', 
+        '250601-SL7-55', '250601-SL7-56', '250601-SL7-57', '250601-SL7-58', '250601-SL7-59', '250601-SL7-60', '250601-SL7-61', '250601-SL7-62', '250601-SL7-63', 
+        '250601-SL7-64', '250601-SL7-65', '250601-SL7-66', '250601-SL7-67', '250601-SL7-68', '250601-SL7-69', '250601-SL7-70', '250601-SL7-71', '250601-SL7-72', 
+        '250601-SL7-73', '250601-SL7-74', '250601-SL7-75', '250601-SL7-76', '250601-SL7-77', '250601-SL7-78', '250601-SL7-79', '250601-SL7-80', '250601-SL7-81', 
+        '250601-SL7-82', '250601-SL7-83', '250601-SL7-84', '250601-SL7-85', '250601-SL7-86', '250601-SL7-87', '250601-SL7-88', '250601-SL7-89', '250601-SL7-90', 
+        '250601-SL7-91', '250601-SL7-92', '250601-SL7-93', '250601-SL7-94', '250601-SL7-95', '250601-SL7-96', '250601-SL7-97', '250601-SL7-98', '250601-SL7-99', 
+        '250601-SL7-100', '250601-SL7-101', '250601-SL7-102', '250601-SL7-103', '250601-SL7-104', '250601-SL7-105', '250601-SL7-106', '250601-SL7-107', 
+        '250601-SL7-108', '250601-SL7-109', '250601-SL7-110', '250601-SL7-111', '250601-SL7-112', '250601-SL7-113', '250601-SL7-114', '250601-SL7-115', 
+        '250601-SL7-116', '250601-SL7-117', '250601-SL7-118', '250601-SL7-119', '250601-SL7-120', '250601-SL7-121', '250601-SL7-122', '250601-SL7-123', 
+        '250601-SL7-124', '250601-SL7-125', '250601-SL7-126'],
+
     'Swedish League #6': ['250531-SL6-1', '250531-SL6-2', '250531-SL6-3', '250531-SL6-4', '250531-SL6-5', '250531-SL6-6', '250531-SL6-7', 
         '250531-SL6-8', '250531-SL6-9', '250531-SL6-10', '250531-SL6-11', '250531-SL6-12', '250531-SL6-13', '250531-SL6-14', 
         '250531-SL6-15', '250531-SL6-16', '250531-SL6-17', '250531-SL6-18', '250531-SL6-19', '250531-SL6-20', '250531-SL6-21', 
@@ -261,29 +277,6 @@ const images = {
         '250412-Orminge_medeln-67', '250412-Orminge_medeln-68', '250412-Orminge_medeln-69', '250412-Orminge_medeln-70', '250412-Orminge_medeln-71', '250412-Orminge_medeln-72',
         '250412-Orminge_medeln-73', '250412-Orminge_medeln-74'],
 
-    'Attunda medeldistans': ['250406-Attunda_medeln-2', '250406-Attunda_medeln-1', '250406-Attunda_medeln-3', '250406-Attunda_medeln-4', '250406-Attunda_medeln-5', '250406-Attunda_medeln-6',
-        '250406-Attunda_medeln-7', '250406-Attunda_medeln-8', '250406-Attunda_medeln-9', '250406-Attunda_medeln-10', '250406-Attunda_medeln-11', '250406-Attunda_medeln-12',
-        '250406-Attunda_medeln-13', '250406-Attunda_medeln-15', '250406-Attunda_medeln-14', '250406-Attunda_medeln-16', '250406-Attunda_medeln-17', '250406-Attunda_medeln-18',
-        '250406-Attunda_medeln-19', '250406-Attunda_medeln-20', '250406-Attunda_medeln-21', '250406-Attunda_medeln-22', '250406-Attunda_medeln-24', '250406-Attunda_medeln-23',
-        '250406-Attunda_medeln-25', '250406-Attunda_medeln-26', '250406-Attunda_medeln-27', '250406-Attunda_medeln-28', '250406-Attunda_medeln-29', '250406-Attunda_medeln-30',
-        '250406-Attunda_medeln-31', '250406-Attunda_medeln-33', '250406-Attunda_medeln-34', '250406-Attunda_medeln-32', '250406-Attunda_medeln-35', '250406-Attunda_medeln-36',
-        '250406-Attunda_medeln-37', '250406-Attunda_medeln-38', '250406-Attunda_medeln-39', '250406-Attunda_medeln-40', '250406-Attunda_medeln-41', '250406-Attunda_medeln-42',
-        '250406-Attunda_medeln-43', '250406-Attunda_medeln-44', '250406-Attunda_medeln-45', '250406-Attunda_medeln-46', '250406-Attunda_medeln-47', '250406-Attunda_medeln-48',
-        '250406-Attunda_medeln-49', '250406-Attunda_medeln-50', '250406-Attunda_medeln-51', '250406-Attunda_medeln-52', '250406-Attunda_medeln-53', '250406-Attunda_medeln-54',
-        '250406-Attunda_medeln-56', '250406-Attunda_medeln-55', '250406-Attunda_medeln-57', '250406-Attunda_medeln-58', '250406-Attunda_medeln-59', '250406-Attunda_medeln-60',
-        '250406-Attunda_medeln-61', '250406-Attunda_medeln-62', '250406-Attunda_medeln-63', '250406-Attunda_medeln-64'],
-
-    'Attundastafetten': ['250405-Attundastafetten-1', '250405-Attundastafetten-2', '250405-Attundastafetten-3', '250405-Attundastafetten-4', '250405-Attundastafetten-5', '250405-Attundastafetten-6',
-        '250405-Attundastafetten-7', '250405-Attundastafetten-8', '250405-Attundastafetten-9', '250405-Attundastafetten-10', '250405-Attundastafetten-11', '250405-Attundastafetten-12', '250405-Attundastafetten-13',
-        '250405-Attundastafetten-14', '250405-Attundastafetten-15', '250405-Attundastafetten-16', '250405-Attundastafetten-17', '250405-Attundastafetten-18', '250405-Attundastafetten-19',
-        '250405-Attundastafetten-20', '250405-Attundastafetten-21', '250405-Attundastafetten-22', '250405-Attundastafetten-23', '250405-Attundastafetten-24', '250405-Attundastafetten-26',
-        '250405-Attundastafetten-25', '250405-Attundastafetten-27', '250405-Attundastafetten-28', '250405-Attundastafetten-29', '250405-Attundastafetten-30', '250405-Attundastafetten-31',
-        '250405-Attundastafetten-32', '250405-Attundastafetten-33', '250405-Attundastafetten-34', '250405-Attundastafetten-35', '250405-Attundastafetten-36', '250405-Attundastafetten-37',
-        '250405-Attundastafetten-39', '250405-Attundastafetten-40', '250405-Attundastafetten-38', '250405-Attundastafetten-41', '250405-Attundastafetten-42', '250405-Attundastafetten-43',
-        '250405-Attundastafetten-44', '250405-Attundastafetten-45', '250405-Attundastafetten-46', '250405-Attundastafetten-47', '250405-Attundastafetten-48', '250405-Attundastafetten-49',
-        '250405-Attundastafetten-50', '250405-Attundastafetten-51', '250405-Attundastafetten-52', '250405-Attundastafetten-53', '250405-Attundastafetten-54', '250405-Attundastafetten-55',
-        '250405-Attundastafetten-56', '250405-Attundastafetten-57', '250405-Attundastafetten-58', '250405-Attundastafetten-59', '250405-Attundastafetten-60', '250405-Attundastafetten-61',
-        '250405-Attundastafetten-62', '250405-Attundastafetten-63', '250405-Attundastafetten-64', '250405-Attundastafetten-65', '250405-Attundastafetten-66'],
 };
 
 const filterBtnContainer = document.getElementById("filter-container");
