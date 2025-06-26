@@ -1,35 +1,22 @@
 import os
-import re
-from collections import defaultdict
+import json
 
-def extract_number_after_last_dash(filename):
-    # Extract the part after the last '-' and before the file extension
-    match = re.search(r'-(\d+)(?:\.\w+)?$', filename)
-    return int(match.group(1)) if match else float('inf')
+directory = "media/sports/mid-res"
 
-def group_and_sort_files(directory):
-    file_dict = defaultdict(list)
+files = os.listdir(directory)
 
-    # List all files in the directory
-    for filename in os.listdir(directory):
-        if os.path.isfile(os.path.join(directory, filename)):
-            # Group by the part before the first '-'
-            key = filename.split('-', 1)[0]
-            file_dict[key].append(filename.split('.')[0])
-
-    # Sort each list by the number after the last '-'
-    for key in file_dict:
-        file_dict[key].sort(key=extract_number_after_last_dash)
-
-    # Sort the dictionary by keys
-    sorted_dict = dict(sorted(file_dict.items()))
+all_files_list = []
+for file in files:
+    all_files_list.append(file.split(".")[0])
     
-    return sorted_dict
+all_files_list = sorted(all_files_list, key=lambda x: int(x.rsplit("-", 1)[-1]))
 
-# Example usage:
-if __name__ == "__main__":
-    directory = "media\sports\high-res"
-    result = group_and_sort_files(directory)
+all_files_dict = {}
+for file in all_files_list:
+    if file.split("-")[0] in all_files_dict:
+        all_files_dict[file.split("-")[0]].append(file)
+    else:
+        all_files_dict[file.split("-")[0]] = [file]
 
-    for key, files in result.items():
-        print(f"{key}: {files}")
+for x in all_files_dict:
+    print(f"{json.dumps(x)} : {json.dumps(all_files_dict[x])}, ")

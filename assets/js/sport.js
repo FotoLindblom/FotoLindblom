@@ -1,316 +1,58 @@
 import { initializeGallery } from "../../assets/js/loadImages.js";
 
-const images = {
-    'Swedish League #7': ['250601-SL7-1', '250601-SL7-2', '250601-SL7-3', '250601-SL7-4', '250601-SL7-5', '250601-SL7-6', '250601-SL7-7', '250601-SL7-8', '250601-SL7-9', 
-        '250601-SL7-10', '250601-SL7-11', '250601-SL7-12', '250601-SL7-13', '250601-SL7-14', '250601-SL7-15', '250601-SL7-16', '250601-SL7-17', '250601-SL7-18', 
-        '250601-SL7-19', '250601-SL7-20', '250601-SL7-21', '250601-SL7-22', '250601-SL7-23', '250601-SL7-24', '250601-SL7-25', '250601-SL7-26', '250601-SL7-27', 
-        '250601-SL7-28', '250601-SL7-29', '250601-SL7-30', '250601-SL7-31', '250601-SL7-32', '250601-SL7-33', '250601-SL7-34', '250601-SL7-35', '250601-SL7-36', 
-        '250601-SL7-37', '250601-SL7-38', '250601-SL7-39', '250601-SL7-40', '250601-SL7-41', '250601-SL7-42', '250601-SL7-43', '250601-SL7-44', '250601-SL7-45', 
-        '250601-SL7-46', '250601-SL7-47', '250601-SL7-48', '250601-SL7-49', '250601-SL7-50', '250601-SL7-51', '250601-SL7-52', '250601-SL7-53', '250601-SL7-54', 
-        '250601-SL7-55', '250601-SL7-56', '250601-SL7-57', '250601-SL7-58', '250601-SL7-59', '250601-SL7-60', '250601-SL7-61', '250601-SL7-62', '250601-SL7-63', 
-        '250601-SL7-64', '250601-SL7-65', '250601-SL7-66', '250601-SL7-67', '250601-SL7-68', '250601-SL7-69', '250601-SL7-70', '250601-SL7-71', '250601-SL7-72', 
-        '250601-SL7-73', '250601-SL7-74', '250601-SL7-75', '250601-SL7-76', '250601-SL7-77', '250601-SL7-78', '250601-SL7-79', '250601-SL7-80', '250601-SL7-81', 
-        '250601-SL7-82', '250601-SL7-83', '250601-SL7-84', '250601-SL7-85', '250601-SL7-86', '250601-SL7-87', '250601-SL7-88', '250601-SL7-89', '250601-SL7-90', 
-        '250601-SL7-91', '250601-SL7-92', '250601-SL7-93', '250601-SL7-94', '250601-SL7-95', '250601-SL7-96', '250601-SL7-97', '250601-SL7-98', '250601-SL7-99', 
-        '250601-SL7-100', '250601-SL7-101', '250601-SL7-102', '250601-SL7-103', '250601-SL7-104', '250601-SL7-105', '250601-SL7-106', '250601-SL7-107', 
-        '250601-SL7-108', '250601-SL7-109', '250601-SL7-110', '250601-SL7-111', '250601-SL7-112', '250601-SL7-113', '250601-SL7-114', '250601-SL7-115', 
-        '250601-SL7-116', '250601-SL7-117', '250601-SL7-118', '250601-SL7-119', '250601-SL7-120', '250601-SL7-121', '250601-SL7-122', '250601-SL7-123', 
-        '250601-SL7-124', '250601-SL7-125', '250601-SL7-126'],
-
-    'Swedish League #6': ['250531-SL6-1', '250531-SL6-2', '250531-SL6-3', '250531-SL6-4', '250531-SL6-5', '250531-SL6-6', '250531-SL6-7', 
-        '250531-SL6-8', '250531-SL6-9', '250531-SL6-10', '250531-SL6-11', '250531-SL6-12', '250531-SL6-13', '250531-SL6-14', 
-        '250531-SL6-15', '250531-SL6-16', '250531-SL6-17', '250531-SL6-18', '250531-SL6-19', '250531-SL6-20', '250531-SL6-21', 
-        '250531-SL6-22', '250531-SL6-23', '250531-SL6-24', '250531-SL6-25', '250531-SL6-26', '250531-SL6-27', '250531-SL6-28', '250531-SL6-29', 
-        '250531-SL6-30', '250531-SL6-31', '250531-SL6-32', '250531-SL6-33', '250531-SL6-34', '250531-SL6-35', '250531-SL6-36', '250531-SL6-37', 
-        '250531-SL6-38', '250531-SL6-39', '250531-SL6-40', '250531-SL6-41', '250531-SL6-42', '250531-SL6-43', '250531-SL6-44', '250531-SL6-45', 
-        '250531-SL6-46', '250531-SL6-47', '250531-SL6-48', '250531-SL6-49', '250531-SL6-50', '250531-SL6-51', '250531-SL6-52', '250531-SL6-53', 
-        '250531-SL6-54', '250531-SL6-55', '250531-SL6-56', '250531-SL6-57', '250531-SL6-58', '250531-SL6-59', '250531-SL6-60', '250531-SL6-61', 
-        '250531-SL6-62', '250531-SL6-63', '250531-SL6-64', '250531-SL6-65', '250531-SL6-66', '250531-SL6-67', '250531-SL6-68', '250531-SL6-69', 
-        '250531-SL6-70', '250531-SL6-71', '250531-SL6-72', '250531-SL6-73', '250531-SL6-74', '250531-SL6-75', '250531-SL6-76', '250531-SL6-77', 
-        '250531-SL6-78', '250531-SL6-79', '250531-SL6-80', '250531-SL6-81', '250531-SL6-82', '250531-SL6-83', '250531-SL6-84', '250531-SL6-85', 
-        '250531-SL6-86', '250531-SL6-87', '250531-SL6-88', '250531-SL6-89', '250531-SL6-90', '250531-SL6-91', '250531-SL6-92', '250531-SL6-93', 
-        '250531-SL6-94', '250531-SL6-95', '250531-SL6-96'], 
-
-    'Swedish League #5': ['250529-SL5_Sprint-1', '250529-SL5_Sprint-2', '250529-SL5_Sprint-3', '250529-SL5_Sprint-4', '250529-SL5_Sprint-5', 
-        '250529-SL5_Sprint-6', '250529-SL5_Sprint-7', '250529-SL5_Sprint-8', '250529-SL5_Sprint-9', '250529-SL5_Sprint-10', 
-        '250529-SL5_Sprint-11', '250529-SL5_Sprint-12', '250529-SL5_Sprint-13', '250529-SL5_Sprint-14', '250529-SL5_Sprint-15', 
-        '250529-SL5_Sprint-16', '250529-SL5_Sprint-17', '250529-SL5_Sprint-18', '250529-SL5_Sprint-19', '250529-SL5_Sprint-20', 
-        '250529-SL5_Sprint-21', '250529-SL5_Sprint-22', '250529-SL5_Sprint-23', '250529-SL5_Sprint-24', '250529-SL5_Sprint-25', 
-        '250529-SL5_Sprint-26', '250529-SL5_Sprint-27', '250529-SL5_Sprint-28', '250529-SL5_Sprint-29', '250529-SL5_Sprint-30', 
-        '250529-SL5_Sprint-31', '250529-SL5_Sprint-32', '250529-SL5_Sprint-33', '250529-SL5_Sprint-34', '250529-SL5_Sprint-35', 
-        '250529-SL5_Sprint-36', '250529-SL5_Sprint-37', '250529-SL5_Sprint-38', '250529-SL5_Sprint-39', '250529-SL5_Sprint-40', 
-        '250529-SL5_Sprint-41', '250529-SL5_Sprint-42', '250529-SL5_Sprint-43', '250529-SL5_Sprint-44', '250529-SL5_Sprint-45', 
-        '250529-SL5_Sprint-46', '250529-SL5_Sprint-47', '250529-SL5_Sprint-48', '250529-SL5_Sprint-49', '250529-SL5_Sprint-50', 
-        '250529-SL5_Sprint-51', '250529-SL5_Sprint-52', '250529-SL5_Sprint-53', '250529-SL5_Sprint-54', '250529-SL5_Sprint-55', 
-        '250529-SL5_Sprint-56', '250529-SL5_Sprint-57', '250529-SL5_Sprint-58', '250529-SL5_Sprint-59', '250529-SL5_Sprint-60', 
-        '250529-SL5_Sprint-61', '250529-SL5_Sprint-62', '250529-SL5_Sprint-63', '250529-SL5_Sprint-64', '250529-SL5_Sprint-65'],
-
-    'Stockholm City Cup, #2': ['250521_SCC2-1', '250521_SCC2-2', '250521_SCC2-3', '250521_SCC2-4', '250521_SCC2-5', '250521_SCC2-6', 
-        '250521_SCC2-7', '250521_SCC2-8', '250521_SCC2-9', '250521_SCC2-10', '250521_SCC2-11', '250521_SCC2-12', '250521_SCC2-13', 
-        '250521_SCC2-14', '250521_SCC2-15', '250521_SCC2-16', '250521_SCC2-17', '250521_SCC2-18', '250521_SCC2-19', '250521_SCC2-20', 
-        '250521_SCC2-21', '250521_SCC2-22', '250521_SCC2-23', '250521_SCC2-24', '250521_SCC2-25', '250521_SCC2-26', '250521_SCC2-27', 
-        '250521_SCC2-28', '250521_SCC2-29', '250521_SCC2-30', '250521_SCC2-31', '250521_SCC2-32', '250521_SCC2-33', '250521_SCC2-34', 
-        '250521_SCC2-35', '250521_SCC2-36', '250521_SCC2-37', '250521_SCC2-38', '250521_SCC2-39', '250521_SCC2-40', '250521_SCC2-41', 
-        '250521_SCC2-42', '250521_SCC2-43', '250521_SCC2-44', '250521_SCC2-45', '250521_SCC2-46', '250521_SCC2-47', '250521_SCC2-48', 
-        '250521_SCC2-49', '250521_SCC2-50', '250521_SCC2-51', '250521_SCC2-52', '250521_SCC2-53', '250521_SCC2-54', '250521_SCC2-55', 
-        '250521_SCC2-56', '250521_SCC2-57', '250521_SCC2-58', '250521_SCC2-59', '250521_SCC2-60', '250521_SCC2-61', '250521_SCC2-62', 
-        '250521_SCC2-63', '250521_SCC2-64', '250521_SCC2-65', '250521_SCC2-66', '250521_SCC2-67', '250521_SCC2-68', '250521_SCC2-69'],
-
-
-    'Stockholm City Cup, #1' : ['250514-SCC1_Gammla_stan-1', '250514-SCC1_Gammla_stan-2', '250514-SCC1_Gammla_stan-3', '250514-SCC1_Gammla_stan-4', '250514-SCC1_Gammla_stan-5', 
-        '250514-SCC1_Gammla_stan-6', '250514-SCC1_Gammla_stan-7', '250514-SCC1_Gammla_stan-8', '250514-SCC1_Gammla_stan-9', '250514-SCC1_Gammla_stan-10', 
-        '250514-SCC1_Gammla_stan-11', '250514-SCC1_Gammla_stan-12', '250514-SCC1_Gammla_stan-13', '250514-SCC1_Gammla_stan-14', '250514-SCC1_Gammla_stan-15', 
-        '250514-SCC1_Gammla_stan-16', '250514-SCC1_Gammla_stan-17', '250514-SCC1_Gammla_stan-18', '250514-SCC1_Gammla_stan-19', '250514-SCC1_Gammla_stan-20', 
-        '250514-SCC1_Gammla_stan-21', '250514-SCC1_Gammla_stan-22', '250514-SCC1_Gammla_stan-23', '250514-SCC1_Gammla_stan-24', '250514-SCC1_Gammla_stan-25', 
-        '250514-SCC1_Gammla_stan-26', '250514-SCC1_Gammla_stan-27', '250514-SCC1_Gammla_stan-28', '250514-SCC1_Gammla_stan-29', '250514-SCC1_Gammla_stan-30', 
-        '250514-SCC1_Gammla_stan-31', '250514-SCC1_Gammla_stan-32', '250514-SCC1_Gammla_stan-33', '250514-SCC1_Gammla_stan-34', '250514-SCC1_Gammla_stan-35', 
-        '250514-SCC1_Gammla_stan-36', '250514-SCC1_Gammla_stan-37', '250514-SCC1_Gammla_stan-38', '250514-SCC1_Gammla_stan-39', '250514-SCC1_Gammla_stan-40', 
-        '250514-SCC1_Gammla_stan-41', '250514-SCC1_Gammla_stan-42', '250514-SCC1_Gammla_stan-43', '250514-SCC1_Gammla_stan-44', '250514-SCC1_Gammla_stan-45', 
-        '250514-SCC1_Gammla_stan-46', '250514-SCC1_Gammla_stan-47', '250514-SCC1_Gammla_stan-48', '250514-SCC1_Gammla_stan-49', '250514-SCC1_Gammla_stan-50', 
-        '250514-SCC1_Gammla_stan-51', '250514-SCC1_Gammla_stan-52', '250514-SCC1_Gammla_stan-53', '250514-SCC1_Gammla_stan-54', '250514-SCC1_Gammla_stan-55', 
-        '250514-SCC1_Gammla_stan-56', '250514-SCC1_Gammla_stan-57', '250514-SCC1_Gammla_stan-58', '250514-SCC1_Gammla_stan-59', '250514-SCC1_Gammla_stan-60', 
-        '250514-SCC1_Gammla_stan-61', '250514-SCC1_Gammla_stan-62', '250514-SCC1_Gammla_stan-63', '250514-SCC1_Gammla_stan-64', '250514-SCC1_Gammla_stan-65', 
-        '250514-SCC1_Gammla_stan-66', '250514-SCC1_Gammla_stan-67', '250514-SCC1_Gammla_stan-68', '250514-SCC1_Gammla_stan-69', '250514-SCC1_Gammla_stan-70'],
-
-    'Stafett SM' : ['250511-Staffet_SM-1', '250511-Staffet_SM-2', '250511-Staffet_SM-3', '250511-Staffet_SM-4', '250511-Staffet_SM-5', '250511-Staffet_SM-6', '250511-Staffet_SM-7', 
-        '250511-Staffet_SM-8', '250511-Staffet_SM-9', '250511-Staffet_SM-10', '250511-Staffet_SM-11', '250511-Staffet_SM-12', '250511-Staffet_SM-13', '250511-Staffet_SM-14', 
-        '250511-Staffet_SM-16', '250511-Staffet_SM-15', '250511-Staffet_SM-17', '250511-Staffet_SM-18', '250511-Staffet_SM-19', '250511-Staffet_SM-20', '250511-Staffet_SM-21', 
-        '250511-Staffet_SM-22', '250511-Staffet_SM-23', '250511-Staffet_SM-24', '250511-Staffet_SM-25', '250511-Staffet_SM-26', '250511-Staffet_SM-27', '250511-Staffet_SM-29', 
-        '250511-Staffet_SM-30', '250511-Staffet_SM-28', '250511-Staffet_SM-31', '250511-Staffet_SM-32', '250511-Staffet_SM-33', '250511-Staffet_SM-34', '250511-Staffet_SM-35', 
-        '250511-Staffet_SM-36', '250511-Staffet_SM-38', '250511-Staffet_SM-39', '250511-Staffet_SM-40', '250511-Staffet_SM-41', '250511-Staffet_SM-42', '250511-Staffet_SM-43', 
-        '250511-Staffet_SM-44', '250511-Staffet_SM-45', '250511-Staffet_SM-46', '250511-Staffet_SM-47', '250511-Staffet_SM-48', '250511-Staffet_SM-49', '250511-Staffet_SM-37',  
-        '250511-Staffet_SM-50', '250511-Staffet_SM-51', '250511-Staffet_SM-52', '250511-Staffet_SM-53', '250511-Staffet_SM-54', '250511-Staffet_SM-55', '250511-Staffet_SM-56', 
-        '250511-Staffet_SM-57', '250511-Staffet_SM-58', '250511-Staffet_SM-59', '250511-Staffet_SM-60', '250511-Staffet_SM-61', '250511-Staffet_SM-62', '250511-Staffet_SM-64', 
-        '250511-Staffet_SM-63', '250511-Staffet_SM-65', '250511-Staffet_SM-66', '250511-Staffet_SM-67', '250511-Staffet_SM-68', '250511-Staffet_SM-69', '250511-Staffet_SM-70', 
-        '250511-Staffet_SM-71', '250511-Staffet_SM-72', '250511-Staffet_SM-73', '250511-Staffet_SM-74', '250511-Staffet_SM-75', '250511-Staffet_SM-76', '250511-Staffet_SM-78', 
-        '250511-Staffet_SM-77', '250511-Staffet_SM-79', '250511-Staffet_SM-80', '250511-Staffet_SM-81', '250511-Staffet_SM-82', '250511-Staffet_SM-83', '250511-Staffet_SM-84', 
-        '250511-Staffet_SM-85', '250511-Staffet_SM-86', '250511-Staffet_SM-87', '250511-Staffet_SM-88', '250511-Staffet_SM-89', '250511-Staffet_SM-90', '250511-Staffet_SM-91', 
-        '250511-Staffet_SM-92', '250511-Staffet_SM-93', '250511-Staffet_SM-94', '250511-Staffet_SM-95', '250511-Staffet_SM-96', '250511-Staffet_SM-97', '250511-Staffet_SM-98', 
-        '250511-Staffet_SM-99', '250511-Staffet_SM-100', '250511-Staffet_SM-101', '250511-Staffet_SM-102', '250511-Staffet_SM-103', '250511-Staffet_SM-104', '250511-Staffet_SM-105', 
-        '250511-Staffet_SM-106', '250511-Staffet_SM-107', '250511-Staffet_SM-108', '250511-Staffet_SM-109', '250511-Staffet_SM-110', '250511-Staffet_SM-111', '250511-Staffet_SM-112', 
-        '250511-Staffet_SM-113', '250511-Staffet_SM-114', '250511-Staffet_SM-115', '250511-Staffet_SM-116', '250511-Staffet_SM-118', '250511-Staffet_SM-117', '250511-Staffet_SM-119', 
-        '250511-Staffet_SM-120', '250511-Staffet_SM-121', '250511-Staffet_SM-122', '250511-Staffet_SM-123', '250511-Staffet_SM-125', '250511-Staffet_SM-126', '250511-Staffet_SM-127', 
-        '250511-Staffet_SM-128', '250511-Staffet_SM-129', '250511-Staffet_SM-130', '250511-Staffet_SM-131', '250511-Staffet_SM-132', '250511-Staffet_SM-133', '250511-Staffet_SM-124', 
-        '250511-Staffet_SM-134', '250511-Staffet_SM-135', '250511-Staffet_SM-137', '250511-Staffet_SM-136', '250511-Staffet_SM-138', '250511-Staffet_SM-139', '250511-Staffet_SM-140', 
-        '250511-Staffet_SM-141', '250511-Staffet_SM-142', '250511-Staffet_SM-143', '250511-Staffet_SM-144', '250511-Staffet_SM-145', '250511-Staffet_SM-146', '250511-Staffet_SM-147', 
-        '250511-Staffet_SM-148', '250511-Staffet_SM-149', '250511-Staffet_SM-150', '250511-Staffet_SM-151', '250511-Staffet_SM-152', '250511-Staffet_SM-153', '250511-Staffet_SM-154', 
-        '250511-Staffet_SM-155', '250511-Staffet_SM-156', '250511-Staffet_SM-157', '250511-Staffet_SM-158', '250511-Staffet_SM-159', '250511-Staffet_SM-160', '250511-Staffet_SM-161', 
-        '250511-Staffet_SM-162', '250511-Staffet_SM-163', '250511-Staffet_SM-164', '250511-Staffet_SM-165', '250511-Staffet_SM-166', '250511-Staffet_SM-167', '250511-Staffet_SM-168', 
-        '250511-Staffet_SM-169', '250511-Staffet_SM-170', '250511-Staffet_SM-171', '250511-Staffet_SM-172', '250511-Staffet_SM-173', '250511-Staffet_SM-174', '250511-Staffet_SM-175', 
-        '250511-Staffet_SM-176', '250511-Staffet_SM-177', '250511-Staffet_SM-178', '250511-Staffet_SM-179', '250511-Staffet_SM-180', '250511-Staffet_SM-181', '250511-Staffet_SM-183', 
-        '250511-Staffet_SM-182', '250511-Staffet_SM-184', '250511-Staffet_SM-185', '250511-Staffet_SM-186', '250511-Staffet_SM-188', '250511-Staffet_SM-187', '250511-Staffet_SM-189', 
-        '250511-Staffet_SM-190', '250511-Staffet_SM-191', '250511-Staffet_SM-192', '250511-Staffet_SM-193', '250511-Staffet_SM-194', '250511-Staffet_SM-195', '250511-Staffet_SM-196', 
-        '250511-Staffet_SM-197', '250511-Staffet_SM-198', '250511-Staffet_SM-199', '250511-Staffet_SM-201', '250511-Staffet_SM-200', '250511-Staffet_SM-202', '250511-Staffet_SM-204', 
-        '250511-Staffet_SM-205', '250511-Staffet_SM-206', '250511-Staffet_SM-203', '250511-Staffet_SM-207', '250511-Staffet_SM-208', '250511-Staffet_SM-209', '250511-Staffet_SM-210', 
-        '250511-Staffet_SM-211', '250511-Staffet_SM-212', '250511-Staffet_SM-213', '250511-Staffet_SM-214', '250511-Staffet_SM-215', '250511-Staffet_SM-216', '250511-Staffet_SM-217'],
-
-    'Medel SM': ['250510-medel_SM-1', '250510-medel_SM-2', '250510-medel_SM-3', '250510-medel_SM-4', '250510-medel_SM-5', '250510-medel_SM-6', '250510-medel_SM-7',
-        '250510-medel_SM-8', '250510-medel_SM-9', '250510-medel_SM-10', '250510-medel_SM-11', '250510-medel_SM-12', '250510-medel_SM-13', '250510-medel_SM-14', '250510-medel_SM-15',
-        '250510-medel_SM-16', '250510-medel_SM-17', '250510-medel_SM-18', '250510-medel_SM-19', '250510-medel_SM-20', '250510-medel_SM-21', '250510-medel_SM-22', '250510-medel_SM-23',
-        '250510-medel_SM-24', '250510-medel_SM-25', '250510-medel_SM-26', '250510-medel_SM-27', '250510-medel_SM-28', '250510-medel_SM-29', '250510-medel_SM-30', '250510-medel_SM-31',
-        '250510-medel_SM-32', '250510-medel_SM-33', '250510-medel_SM-34', '250510-medel_SM-35', '250510-medel_SM-36', '250510-medel_SM-37', '250510-medel_SM-38', '250510-medel_SM-39',
-        '250510-medel_SM-40', '250510-medel_SM-41', '250510-medel_SM-42', '250510-medel_SM-43', '250510-medel_SM-44', '250510-medel_SM-45', '250510-medel_SM-46', '250510-medel_SM-47',
-        '250510-medel_SM-48', '250510-medel_SM-49', '250510-medel_SM-50', '250510-medel_SM-51', '250510-medel_SM-52', '250510-medel_SM-53', '250510-medel_SM-54', '250510-medel_SM-55',
-        '250510-medel_SM-56', '250510-medel_SM-57', '250510-medel_SM-58', '250510-medel_SM-59', '250510-medel_SM-60', '250510-medel_SM-61', '250510-medel_SM-62', '250510-medel_SM-63',
-        '250510-medel_SM-64', '250510-medel_SM-65', '250510-medel_SM-66', '250510-medel_SM-67', '250510-medel_SM-68', '250510-medel_SM-69', '250510-medel_SM-71', '250510-medel_SM-72',
-        '250510-medel_SM-70', '250510-medel_SM-73', '250510-medel_SM-74', '250510-medel_SM-75', '250510-medel_SM-76', '250510-medel_SM-77', '250510-medel_SM-78', '250510-medel_SM-79',
-        '250510-medel_SM-80', '250510-medel_SM-81', '250510-medel_SM-82', '250510-medel_SM-83', '250510-medel_SM-84', '250510-medel_SM-85', '250510-medel_SM-86', '250510-medel_SM-87',
-        '250510-medel_SM-88', '250510-medel_SM-89', '250510-medel_SM-90', '250510-medel_SM-91', '250510-medel_SM-92', '250510-medel_SM-93', '250510-medel_SM-94', '250510-medel_SM-95',
-        '250510-medel_SM-96', '250510-medel_SM-97', '250510-medel_SM-98', '250510-medel_SM-99', '250510-medel_SM-100', '250510-medel_SM-101', '250510-medel_SM-102', '250510-medel_SM-103',
-        '250510-medel_SM-104', '250510-medel_SM-105', '250510-medel_SM-106', '250510-medel_SM-107', '250510-medel_SM-108', '250510-medel_SM-109', '250510-medel_SM-110', '250510-medel_SM-111',
-        '250510-medel_SM-112', '250510-medel_SM-113', '250510-medel_SM-114', '250510-medel_SM-115', '250510-medel_SM-116', '250510-medel_SM-117', '250510-medel_SM-118', '250510-medel_SM-119',
-        '250510-medel_SM-120', '250510-medel_SM-121', '250510-medel_SM-122', '250510-medel_SM-123', '250510-medel_SM-124', '250510-medel_SM-125', '250510-medel_SM-126', '250510-medel_SM-127',
-        '250510-medel_SM-128', '250510-medel_SM-129', '250510-medel_SM-130', '250510-medel_SM-131', '250510-medel_SM-132', '250510-medel_SM-133', '250510-medel_SM-134', '250510-medel_SM-135',
-        '250510-medel_SM-136', '250510-medel_SM-137', '250510-medel_SM-138', '250510-medel_SM-139', '250510-medel_SM-140', '250510-medel_SM-141', '250510-medel_SM-142', '250510-medel_SM-143',
-        '250510-medel_SM-144', '250510-medel_SM-145', '250510-medel_SM-146', '250510-medel_SM-147', '250510-medel_SM-148', '250510-medel_SM-149', '250510-medel_SM-150', '250510-medel_SM-151',
-        '250510-medel_SM-152', '250510-medel_SM-153', '250510-medel_SM-154', '250510-medel_SM-155', '250510-medel_SM-156', '250510-medel_SM-157', '250510-medel_SM-158', '250510-medel_SM-159',
-        '250510-medel_SM-160', '250510-medel_SM-161', '250510-medel_SM-162', '250510-medel_SM-163', '250510-medel_SM-164', '250510-medel_SM-165', '250510-medel_SM-166', '250510-medel_SM-167',
-        '250510-medel_SM-168', '250510-medel_SM-169', '250510-medel_SM-170', '250510-medel_SM-171', '250510-medel_SM-172', '250510-medel_SM-173', '250510-medel_SM-174', '250510-medel_SM-175',
-        '250510-medel_SM-176', '250510-medel_SM-177', '250510-medel_SM-178', '250510-medel_SM-179', '250510-medel_SM-180', '250510-medel_SM-181', '250510-medel_SM-182', '250510-medel_SM-183',
-        '250510-medel_SM-184', '250510-medel_SM-185', '250510-medel_SM-186', '250510-medel_SM-187', '250510-medel_SM-188', '250510-medel_SM-189', '250510-medel_SM-190', '250510-medel_SM-191',
-        '250510-medel_SM-192', '250510-medel_SM-193', '250510-medel_SM-194', '250510-medel_SM-195', '250510-medel_SM-196', '250510-medel_SM-197', '250510-medel_SM-198', '250510-medel_SM-199',
-        '250510-medel_SM-200', '250510-medel_SM-201', '250510-medel_SM-202', '250510-medel_SM-203', '250510-medel_SM-204', '250510-medel_SM-205', '250510-medel_SM-206', '250510-medel_SM-207',
-        '250510-medel_SM-208', '250510-medel_SM-209', '250510-medel_SM-210', '250510-medel_SM-211', '250510-medel_SM-212', '250510-medel_SM-213', '250510-medel_SM-214', '250510-medel_SM-215',
-        '250510-medel_SM-216'],
-
-    'Medel SM Qualifying': ['250509-medel_SM_kval-1', '250509-medel_SM_kval-2', '250509-medel_SM_kval-3', '250509-medel_SM_kval-4', '250509-medel_SM_kval-5', '250509-medel_SM_kval-6',
-        '250509-medel_SM_kval-7', '250509-medel_SM_kval-8', '250509-medel_SM_kval-9', '250509-medel_SM_kval-10', '250509-medel_SM_kval-11', '250509-medel_SM_kval-12',
-        '250509-medel_SM_kval-13', '250509-medel_SM_kval-14', '250509-medel_SM_kval-15', '250509-medel_SM_kval-16', '250509-medel_SM_kval-17', '250509-medel_SM_kval-18',
-        '250509-medel_SM_kval-19', '250509-medel_SM_kval-20', '250509-medel_SM_kval-21', '250509-medel_SM_kval-22', '250509-medel_SM_kval-23', '250509-medel_SM_kval-24',
-        '250509-medel_SM_kval-25', '250509-medel_SM_kval-26', '250509-medel_SM_kval-27', '250509-medel_SM_kval-28', '250509-medel_SM_kval-29', '250509-medel_SM_kval-30',
-        '250509-medel_SM_kval-31', '250509-medel_SM_kval-32', '250509-medel_SM_kval-33', '250509-medel_SM_kval-34', '250509-medel_SM_kval-35', '250509-medel_SM_kval-36',
-        '250509-medel_SM_kval-37', '250509-medel_SM_kval-38', '250509-medel_SM_kval-39', '250509-medel_SM_kval-40', '250509-medel_SM_kval-41', '250509-medel_SM_kval-42',
-        '250509-medel_SM_kval-43', '250509-medel_SM_kval-44', '250509-medel_SM_kval-45', '250509-medel_SM_kval-46', '250509-medel_SM_kval-47', '250509-medel_SM_kval-48',
-        '250509-medel_SM_kval-49', '250509-medel_SM_kval-50', '250509-medel_SM_kval-51', '250509-medel_SM_kval-52', '250509-medel_SM_kval-53', '250509-medel_SM_kval-54',
-        '250509-medel_SM_kval-55', '250509-medel_SM_kval-56', '250509-medel_SM_kval-57', '250509-medel_SM_kval-58', '250509-medel_SM_kval-59', '250509-medel_SM_kval-60',
-        '250509-medel_SM_kval-61', '250509-medel_SM_kval-62', '250509-medel_SM_kval-63', '250509-medel_SM_kval-64', '250509-medel_SM_kval-65', '250509-medel_SM_kval-66',
-        '250509-medel_SM_kval-67', '250509-medel_SM_kval-68', '250509-medel_SM_kval-69', '250509-medel_SM_kval-70', '250509-medel_SM_kval-71', '250509-medel_SM_kval-72',
-        '250509-medel_SM_kval-73', '250509-medel_SM_kval-74', '250509-medel_SM_kval-75', '250509-medel_SM_kval-76', '250509-medel_SM_kval-77', '250509-medel_SM_kval-78',
-        '250509-medel_SM_kval-79', '250509-medel_SM_kval-80', '250509-medel_SM_kval-81', '250509-medel_SM_kval-82', '250509-medel_SM_kval-83', '250509-medel_SM_kval-84',
-        '250509-medel_SM_kval-85', '250509-medel_SM_kval-86', '250509-medel_SM_kval-87', '250509-medel_SM_kval-88', '250509-medel_SM_kval-89', '250509-medel_SM_kval-90',
-        '250509-medel_SM_kval-91', '250509-medel_SM_kval-92', '250509-medel_SM_kval-93', '250509-medel_SM_kval-94', '250509-medel_SM_kval-96', '250509-medel_SM_kval-95',
-        '250509-medel_SM_kval-97', '250509-medel_SM_kval-98', '250509-medel_SM_kval-99', '250509-medel_SM_kval-100', '250509-medel_SM_kval-101', '250509-medel_SM_kval-102',
-        '250509-medel_SM_kval-103', '250509-medel_SM_kval-104', '250509-medel_SM_kval-105', '250509-medel_SM_kval-106', '250509-medel_SM_kval-107', '250509-medel_SM_kval-108',
-        '250509-medel_SM_kval-109', '250509-medel_SM_kval-110', '250509-medel_SM_kval-111', '250509-medel_SM_kval-112', '250509-medel_SM_kval-113', '250509-medel_SM_kval-114',
-        '250509-medel_SM_kval-115', '250509-medel_SM_kval-116', '250509-medel_SM_kval-117', '250509-medel_SM_kval-118', '250509-medel_SM_kval-119', '250509-medel_SM_kval-120',
-        '250509-medel_SM_kval-121', '250509-medel_SM_kval-122', '250509-medel_SM_kval-123', '250509-medel_SM_kval-124', '250509-medel_SM_kval-125', '250509-medel_SM_kval-126',
-        '250509-medel_SM_kval-127', '250509-medel_SM_kval-128', '250509-medel_SM_kval-129', '250509-medel_SM_kval-130', '250509-medel_SM_kval-131', '250509-medel_SM_kval-132',
-        '250509-medel_SM_kval-133', '250509-medel_SM_kval-134', '250509-medel_SM_kval-135', '250509-medel_SM_kval-136', '250509-medel_SM_kval-137', '250509-medel_SM_kval-138',
-        '250509-medel_SM_kval-139', '250509-medel_SM_kval-140', '250509-medel_SM_kval-141', '250509-medel_SM_kval-142', '250509-medel_SM_kval-143', '250509-medel_SM_kval-144',
-        '250509-medel_SM_kval-145', '250509-medel_SM_kval-146', '250509-medel_SM_kval-147', '250509-medel_SM_kval-148', '250509-medel_SM_kval-149', '250509-medel_SM_kval-150',
-        '250509-medel_SM_kval-151', '250509-medel_SM_kval-152', '250509-medel_SM_kval-153', '250509-medel_SM_kval-154', '250509-medel_SM_kval-155', '250509-medel_SM_kval-156',
-        '250509-medel_SM_kval-157', '250509-medel_SM_kval-158', '250509-medel_SM_kval-159', '250509-medel_SM_kval-160', '250509-medel_SM_kval-161', '250509-medel_SM_kval-162',
-        '250509-medel_SM_kval-163', '250509-medel_SM_kval-164', '250509-medel_SM_kval-165', '250509-medel_SM_kval-166', '250509-medel_SM_kval-167', '250509-medel_SM_kval-168',
-        '250509-medel_SM_kval-169', '250509-medel_SM_kval-170', '250509-medel_SM_kval-171', '250509-medel_SM_kval-172', '250509-medel_SM_kval-173', '250509-medel_SM_kval-174',
-        '250509-medel_SM_kval-175', '250509-medel_SM_kval-176', '250509-medel_SM_kval-177', '250509-medel_SM_kval-178', '250509-medel_SM_kval-179', '250509-medel_SM_kval-180',
-        '250509-medel_SM_kval-181', '250509-medel_SM_kval-182', '250509-medel_SM_kval-183', '250509-medel_SM_kval-184', '250509-medel_SM_kval-185', '250509-medel_SM_kval-186',
-        '250509-medel_SM_kval-187', '250509-medel_SM_kval-188', '250509-medel_SM_kval-189', '250509-medel_SM_kval-190', '250509-medel_SM_kval-191', '250509-medel_SM_kval-192',
-        '250509-medel_SM_kval-193', '250509-medel_SM_kval-194', '250509-medel_SM_kval-195', '250509-medel_SM_kval-196', '250509-medel_SM_kval-197', '250509-medel_SM_kval-198',
-        '250509-medel_SM_kval-199', '250509-medel_SM_kval-200', '250509-medel_SM_kval-201'],
-
-    '10Mila': ['250504-10Mila-1', '250504-10Mila-2', '250504-10Mila-3', '250504-10Mila-4', '250504-10Mila-5', '250504-10Mila-6', '250504-10Mila-7', '250504-10Mila-8', '250504-10Mila-9',
-        '250504-10Mila-10', '250504-10Mila-11', '250504-10Mila-12', '250504-10Mila-13', '250504-10Mila-14', '250504-10Mila-15', '250504-10Mila-16', '250504-10Mila-17', '250504-10Mila-18',
-        '250504-10Mila-19', '250504-10Mila-20', '250504-10Mila-21', '250504-10Mila-22', '250504-10Mila-23', '250504-10Mila-24', '250504-10Mila-25', '250504-10Mila-26', '250504-10Mila-27',
-        '250504-10Mila-28', '250504-10Mila-29', '250504-10Mila-30', '250504-10Mila-31', '250504-10Mila-32', '250504-10Mila-33', '250504-10Mila-34', '250504-10Mila-35', '250504-10Mila-36',
-        '250504-10Mila-37', '250504-10Mila-38', '250504-10Mila-39', '250504-10Mila-40', '250504-10Mila-41', '250504-10Mila-42', '250504-10Mila-43', '250504-10Mila-44', '250504-10Mila-45',
-        '250504-10Mila-46', '250504-10Mila-47', '250504-10Mila-48', '250504-10Mila-49', '250504-10Mila-50', '250504-10Mila-51', '250504-10Mila-52', '250504-10Mila-53', '250504-10Mila-55',
-        '250504-10Mila-56', '250504-10Mila-57', '250504-10Mila-58', '250504-10Mila-59', '250504-10Mila-54', '250504-10Mila-60', '250504-10Mila-61', '250504-10Mila-62', '250504-10Mila-63',
-        '250504-10Mila-64', '250504-10Mila-65', '250504-10Mila-66', '250504-10Mila-67', '250504-10Mila-68', '250504-10Mila-69', '250504-10Mila-70', '250504-10Mila-71', '250504-10Mila-72',
-        '250504-10Mila-74', '250504-10Mila-75', '250504-10Mila-76', '250504-10Mila-77', '250504-10Mila-78', '250504-10Mila-79', '250504-10Mila-80', '250504-10Mila-73', '250504-10Mila-81',
-        '250504-10Mila-82', '250504-10Mila-83', '250504-10Mila-84', '250504-10Mila-85', '250504-10Mila-86', '250504-10Mila-87', '250504-10Mila-88', '250504-10Mila-90', '250504-10Mila-89'],
-
-    '10Mila Youth Relay': ['250503-10Mila_ungdomsstafett-1', '250503-10Mila_ungdomsstafett-2', '250503-10Mila_ungdomsstafett-3', '250503-10Mila_ungdomsstafett-4', '250503-10Mila_ungdomsstafett-5',
-        '250503-10Mila_ungdomsstafett-6', '250503-10Mila_ungdomsstafett-7', '250503-10Mila_ungdomsstafett-8', '250503-10Mila_ungdomsstafett-9', '250503-10Mila_ungdomsstafett-10',
-        '250503-10Mila_ungdomsstafett-11', '250503-10Mila_ungdomsstafett-12', '250503-10Mila_ungdomsstafett-13', '250503-10Mila_ungdomsstafett-14', '250503-10Mila_ungdomsstafett-15',
-        '250503-10Mila_ungdomsstafett-16', '250503-10Mila_ungdomsstafett-17', '250503-10Mila_ungdomsstafett-18', '250503-10Mila_ungdomsstafett-19', '250503-10Mila_ungdomsstafett-20',
-        '250503-10Mila_ungdomsstafett-21', '250503-10Mila_ungdomsstafett-22', '250503-10Mila_ungdomsstafett-23', '250503-10Mila_ungdomsstafett-24', '250503-10Mila_ungdomsstafett-25',
-        '250503-10Mila_ungdomsstafett-26', '250503-10Mila_ungdomsstafett-27', '250503-10Mila_ungdomsstafett-28', '250503-10Mila_ungdomsstafett-29', '250503-10Mila_ungdomsstafett-30',
-        '250503-10Mila_ungdomsstafett-31', '250503-10Mila_ungdomsstafett-32', '250503-10Mila_ungdomsstafett-33', '250503-10Mila_ungdomsstafett-34', '250503-10Mila_ungdomsstafett-35',
-        '250503-10Mila_ungdomsstafett-36', '250503-10Mila_ungdomsstafett-37', '250503-10Mila_ungdomsstafett-38', '250503-10Mila_ungdomsstafett-39', '250503-10Mila_ungdomsstafett-40',
-        '250503-10Mila_ungdomsstafett-41', '250503-10Mila_ungdomsstafett-42', '250503-10Mila_ungdomsstafett-43', '250503-10Mila_ungdomsstafett-44', '250503-10Mila_ungdomsstafett-45',
-        '250503-10Mila_ungdomsstafett-46', '250503-10Mila_ungdomsstafett-47', '250503-10Mila_ungdomsstafett-48', '250503-10Mila_ungdomsstafett-49', '250503-10Mila_ungdomsstafett-50',
-        '250503-10Mila_ungdomsstafett-51', '250503-10Mila_ungdomsstafett-52', '250503-10Mila_ungdomsstafett-53', '250503-10Mila_ungdomsstafett-54', '250503-10Mila_ungdomsstafett-55',
-        '250503-10Mila_ungdomsstafett-56', '250503-10Mila_ungdomsstafett-57', '250503-10Mila_ungdomsstafett-58', '250503-10Mila_ungdomsstafett-59', '250503-10Mila_ungdomsstafett-60',
-        '250503-10Mila_ungdomsstafett-61', '250503-10Mila_ungdomsstafett-62', '250503-10Mila_ungdomsstafett-63', '250503-10Mila_ungdomsstafett-64', '250503-10Mila_ungdomsstafett-65',
-        '250503-10Mila_ungdomsstafett-66', '250503-10Mila_ungdomsstafett-67', '250503-10Mila_ungdomsstafett-68', '250503-10Mila_ungdomsstafett-69', '250503-10Mila_ungdomsstafett-70',
-        '250503-10Mila_ungdomsstafett-71', '250503-10Mila_ungdomsstafett-72', '250503-10Mila_ungdomsstafett-73', '250503-10Mila_ungdomsstafett-74', '250503-10Mila_ungdomsstafett-75',
-        '250503-10Mila_ungdomsstafett-76', '250503-10Mila_ungdomsstafett-77', '250503-10Mila_ungdomsstafett-78', '250503-10Mila_ungdomsstafett-79', '250503-10Mila_ungdomsstafett-80',
-        '250503-10Mila_ungdomsstafett-81', '250503-10Mila_ungdomsstafett-82', '250503-10Mila_ungdomsstafett-83', '250503-10Mila_ungdomsstafett-84', '250503-10Mila_ungdomsstafett-85',
-        '250503-10Mila_ungdomsstafett-86', '250503-10Mila_ungdomsstafett-87', '250503-10Mila_ungdomsstafett-88', '250503-10Mila_ungdomsstafett-89', '250503-10Mila_ungdomsstafett-90',
-        '250503-10Mila_ungdomsstafett-91', '250503-10Mila_ungdomsstafett-92', '250503-10Mila_ungdomsstafett-93', '250503-10Mila_ungdomsstafett-94', '250503-10Mila_ungdomsstafett-95',
-        '250503-10Mila_ungdomsstafett-96', '250503-10Mila_ungdomsstafett-97', '250503-10Mila_ungdomsstafett-98', '250503-10Mila_ungdomsstafett-99', '250503-10Mila_ungdomsstafett-100',
-        '250503-10Mila_ungdomsstafett-101', '250503-10Mila_ungdomsstafett-102', '250503-10Mila_ungdomsstafett-103', '250503-10Mila_ungdomsstafett-104', '250503-10Mila_ungdomsstafett-105',
-        '250503-10Mila_ungdomsstafett-106', '250503-10Mila_ungdomsstafett-107', '250503-10Mila_ungdomsstafett-108', '250503-10Mila_ungdomsstafett-109', '250503-10Mila_ungdomsstafett-110',
-        '250503-10Mila_ungdomsstafett-111', '250503-10Mila_ungdomsstafett-112', '250503-10Mila_ungdomsstafett-113', '250503-10Mila_ungdomsstafett-114', '250503-10Mila_ungdomsstafett-115',
-        '250503-10Mila_ungdomsstafett-116', '250503-10Mila_ungdomsstafett-117', '250503-10Mila_ungdomsstafett-118', '250503-10Mila_ungdomsstafett-119', '250503-10Mila_ungdomsstafett-120',
-        '250503-10Mila_ungdomsstafett-121', '250503-10Mila_ungdomsstafett-122', '250503-10Mila_ungdomsstafett-123', '250503-10Mila_ungdomsstafett-124', '250503-10Mila_ungdomsstafett-125',
-        '250503-10Mila_ungdomsstafett-126', '250503-10Mila_ungdomsstafett-127', '250503-10Mila_ungdomsstafett-128', '250503-10Mila_ungdomsstafett-129', '250503-10Mila_ungdomsstafett-130',
-        '250503-10Mila_ungdomsstafett-131', '250503-10Mila_ungdomsstafett-132', '250503-10Mila_ungdomsstafett-133', '250503-10Mila_ungdomsstafett-134', '250503-10Mila_ungdomsstafett-135',
-        '250503-10Mila_ungdomsstafett-136', '250503-10Mila_ungdomsstafett-137', '250503-10Mila_ungdomsstafett-138', '250503-10Mila_ungdomsstafett-139', '250503-10Mila_ungdomsstafett-140',
-        '250503-10Mila_ungdomsstafett-141', '250503-10Mila_ungdomsstafett-142', '250503-10Mila_ungdomsstafett-143', '250503-10Mila_ungdomsstafett-144', '250503-10Mila_ungdomsstafett-145',
-        '250503-10Mila_ungdomsstafett-146', '250503-10Mila_ungdomsstafett-147', '250503-10Mila_ungdomsstafett-148', '250503-10Mila_ungdomsstafett-149', '250503-10Mila_ungdomsstafett-150',
-        '250503-10Mila_ungdomsstafett-151', '250503-10Mila_ungdomsstafett-152', '250503-10Mila_ungdomsstafett-153', '250503-10Mila_ungdomsstafett-154', '250503-10Mila_ungdomsstafett-155',
-        '250503-10Mila_ungdomsstafett-156', '250503-10Mila_ungdomsstafett-157', '250503-10Mila_ungdomsstafett-158', '250503-10Mila_ungdomsstafett-159', '250503-10Mila_ungdomsstafett-160',
-        '250503-10Mila_ungdomsstafett-161', '250503-10Mila_ungdomsstafett-162', '250503-10Mila_ungdomsstafett-163', '250503-10Mila_ungdomsstafett-164', '250503-10Mila_ungdomsstafett-165',
-        '250503-10Mila_ungdomsstafett-166', '250503-10Mila_ungdomsstafett-167', '250503-10Mila_ungdomsstafett-168', '250503-10Mila_ungdomsstafett-169', '250503-10Mila_ungdomsstafett-170',
-        '250503-10Mila_ungdomsstafett-171', '250503-10Mila_ungdomsstafett-172', '250503-10Mila_ungdomsstafett-174', '250503-10Mila_ungdomsstafett-175', '250503-10Mila_ungdomsstafett-173',
-        '250503-10Mila_ungdomsstafett-176', '250503-10Mila_ungdomsstafett-177', '250503-10Mila_ungdomsstafett-178', '250503-10Mila_ungdomsstafett-179', '250503-10Mila_ungdomsstafett-180',
-        '250503-10Mila_ungdomsstafett-181', '250503-10Mila_ungdomsstafett-182', '250503-10Mila_ungdomsstafett-184', '250503-10Mila_ungdomsstafett-183', '250503-10Mila_ungdomsstafett-185',
-        '250503-10Mila_ungdomsstafett-186', '250503-10Mila_ungdomsstafett-187', '250503-10Mila_ungdomsstafett-188', '250503-10Mila_ungdomsstafett-189', '250503-10Mila_ungdomsstafett-190',
-        '250503-10Mila_ungdomsstafett-191', '250503-10Mila_ungdomsstafett-192', '250503-10Mila_ungdomsstafett-193', '250503-10Mila_ungdomsstafett-194', '250503-10Mila_ungdomsstafett-195',
-        '250503-10Mila_ungdomsstafett-196', '250503-10Mila_ungdomsstafett-197', '250503-10Mila_ungdomsstafett-198', '250503-10Mila_ungdomsstafett-199'],
-
-    'Swedish League #3': ['250501-Swedish_League_3-1', '250501-Swedish_League_3-2', '250501-Swedish_League_3-3', '250501-Swedish_League_3-4', '250501-Swedish_League_3-5',
-        '250501-Swedish_League_3-6', '250501-Swedish_League_3-7', '250501-Swedish_League_3-8', '250501-Swedish_League_3-9', '250501-Swedish_League_3-10', '250501-Swedish_League_3-11',
-        '250501-Swedish_League_3-12', '250501-Swedish_League_3-13', '250501-Swedish_League_3-14', '250501-Swedish_League_3-15', '250501-Swedish_League_3-16', '250501-Swedish_League_3-17',
-        '250501-Swedish_League_3-18', '250501-Swedish_League_3-19', '250501-Swedish_League_3-20', '250501-Swedish_League_3-21', '250501-Swedish_League_3-22', '250501-Swedish_League_3-23',
-        '250501-Swedish_League_3-24', '250501-Swedish_League_3-25', '250501-Swedish_League_3-26', '250501-Swedish_League_3-27', '250501-Swedish_League_3-28', '250501-Swedish_League_3-29',
-        '250501-Swedish_League_3-30', '250501-Swedish_League_3-31', '250501-Swedish_League_3-32', '250501-Swedish_League_3-33', '250501-Swedish_League_3-34', '250501-Swedish_League_3-35',
-        '250501-Swedish_League_3-36', '250501-Swedish_League_3-37', '250501-Swedish_League_3-38', '250501-Swedish_League_3-39', '250501-Swedish_League_3-40', '250501-Swedish_League_3-41',
-        '250501-Swedish_League_3-42', '250501-Swedish_League_3-43', '250501-Swedish_League_3-44', '250501-Swedish_League_3-45', '250501-Swedish_League_3-46', '250501-Swedish_League_3-47',
-        '250501-Swedish_League_3-48', '250501-Swedish_League_3-49', '250501-Swedish_League_3-50', '250501-Swedish_League_3-51', '250501-Swedish_League_3-52', '250501-Swedish_League_3-53',
-        '250501-Swedish_League_3-54', '250501-Swedish_League_3-55', '250501-Swedish_League_3-56', '250501-Swedish_League_3-57', '250501-Swedish_League_3-58', '250501-Swedish_League_3-59',
-        '250501-Swedish_League_3-60', '250501-Swedish_League_3-61', '250501-Swedish_League_3-62', '250501-Swedish_League_3-63', '250501-Swedish_League_3-64', '250501-Swedish_League_3-65',
-        '250501-Swedish_League_3-66', '250501-Swedish_League_3-67', '250501-Swedish_League_3-68', '250501-Swedish_League_3-69', '250501-Swedish_League_3-70', '250501-Swedish_League_3-71',
-        '250501-Swedish_League_3-72', '250501-Swedish_League_3-73', '250501-Swedish_League_3-74', '250501-Swedish_League_3-75', '250501-Swedish_League_3-76', '250501-Swedish_League_3-77',
-        '250501-Swedish_League_3-78', '250501-Swedish_League_3-79', '250501-Swedish_League_3-80', '250501-Swedish_League_3-81', '250501-Swedish_League_3-82', '250501-Swedish_League_3-83',
-        '250501-Swedish_League_3-84', '250501-Swedish_League_3-85', '250501-Swedish_League_3-86', '250501-Swedish_League_3-87', '250501-Swedish_League_3-88', '250501-Swedish_League_3-89',
-        '250501-Swedish_League_3-90', '250501-Swedish_League_3-91', '250501-Swedish_League_3-92', '250501-Swedish_League_3-93', '250501-Swedish_League_3-94', '250501-Swedish_League_3-95',
-        '250501-Swedish_League_3-96', '250501-Swedish_League_3-97', '250501-Swedish_League_3-98', '250501-Swedish_League_3-99', '250501-Swedish_League_3-100', '250501-Swedish_League_3-101',
-        '250501-Swedish_League_3-102', '250501-Swedish_League_3-103', '250501-Swedish_League_3-104', '250501-Swedish_League_3-105', '250501-Swedish_League_3-106', '250501-Swedish_League_3-107',
-        '250501-Swedish_League_3-108', '250501-Swedish_League_3-109', '250501-Swedish_League_3-110', '250501-Swedish_League_3-111', '250501-Swedish_League_3-112', '250501-Swedish_League_3-113',
-        '250501-Swedish_League_3-114', '250501-Swedish_League_3-115', '250501-Swedish_League_3-116', '250501-Swedish_League_3-117', '250501-Swedish_League_3-118', '250501-Swedish_League_3-119'],
-
-    'Prästtomtadubbeln': ['250420-Prästtomtadubbeln-1', '250420-Prästtomtadubbeln-2', '250420-Prästtomtadubbeln-3', '250420-Prästtomtadubbeln-4', '250420-Prästtomtadubbeln-6',
-        '250420-Prästtomtadubbeln-5', '250420-Prästtomtadubbeln-7', '250420-Prästtomtadubbeln-8', '250420-Prästtomtadubbeln-9', '250420-Prästtomtadubbeln-10',
-        '250420-Prästtomtadubbeln-11', '250420-Prästtomtadubbeln-12', '250420-Prästtomtadubbeln-13', '250420-Prästtomtadubbeln-14', '250420-Prästtomtadubbeln-15',
-        '250420-Prästtomtadubbeln-16', '250420-Prästtomtadubbeln-17', '250420-Prästtomtadubbeln-18', '250420-Prästtomtadubbeln-19', '250420-Prästtomtadubbeln-20',
-        '250420-Prästtomtadubbeln-22', '250420-Prästtomtadubbeln-21', '250420-Prästtomtadubbeln-23', '250420-Prästtomtadubbeln-24', '250420-Prästtomtadubbeln-25',
-        '250420-Prästtomtadubbeln-26', '250420-Prästtomtadubbeln-27', '250420-Prästtomtadubbeln-28', '250420-Prästtomtadubbeln-29', '250420-Prästtomtadubbeln-30',
-        '250420-Prästtomtadubbeln-31', '250420-Prästtomtadubbeln-33', '250420-Prästtomtadubbeln-34', '250420-Prästtomtadubbeln-32', '250420-Prästtomtadubbeln-36',
-        '250420-Prästtomtadubbeln-35', '250420-Prästtomtadubbeln-37', '250420-Prästtomtadubbeln-39', '250420-Prästtomtadubbeln-38', '250420-Prästtomtadubbeln-40',
-        '250420-Prästtomtadubbeln-41', '250420-Prästtomtadubbeln-42', '250420-Prästtomtadubbeln-43', '250420-Prästtomtadubbeln-44', '250420-Prästtomtadubbeln-45',
-        '250420-Prästtomtadubbeln-46', '250420-Prästtomtadubbeln-47', '250420-Prästtomtadubbeln-49', '250420-Prästtomtadubbeln-48'],
-
-    'Stigtomtakavlen': ['250418-Stigtomtakavlen-2', '250418-Stigtomtakavlen-3', '250418-Stigtomtakavlen-4', '250418-Stigtomtakavlen-1', '250418-Stigtomtakavlen-5', '250418-Stigtomtakavlen-6',
-        '250418-Stigtomtakavlen-7', '250418-Stigtomtakavlen-8', '250418-Stigtomtakavlen-9', '250418-Stigtomtakavlen-11', '250418-Stigtomtakavlen-10', '250418-Stigtomtakavlen-12',
-        '250418-Stigtomtakavlen-13', '250418-Stigtomtakavlen-15', '250418-Stigtomtakavlen-14', '250418-Stigtomtakavlen-16', '250418-Stigtomtakavlen-17', '250418-Stigtomtakavlen-18',
-        '250418-Stigtomtakavlen-20', '250418-Stigtomtakavlen-21', '250418-Stigtomtakavlen-19', '250418-Stigtomtakavlen-23', '250418-Stigtomtakavlen-24', '250418-Stigtomtakavlen-25',
-        '250418-Stigtomtakavlen-26', '250418-Stigtomtakavlen-27', '250418-Stigtomtakavlen-28', '250418-Stigtomtakavlen-29', '250418-Stigtomtakavlen-30', '250418-Stigtomtakavlen-22',
-        '250418-Stigtomtakavlen-31', '250418-Stigtomtakavlen-32', '250418-Stigtomtakavlen-33', '250418-Stigtomtakavlen-34', '250418-Stigtomtakavlen-36', '250418-Stigtomtakavlen-37',
-        '250418-Stigtomtakavlen-35', '250418-Stigtomtakavlen-38', '250418-Stigtomtakavlen-39', '250418-Stigtomtakavlen-40', '250418-Stigtomtakavlen-41', '250418-Stigtomtakavlen-42',
-        '250418-Stigtomtakavlen-44', '250418-Stigtomtakavlen-45', '250418-Stigtomtakavlen-43', '250418-Stigtomtakavlen-46', '250418-Stigtomtakavlen-47', '250418-Stigtomtakavlen-48',
-        '250418-Stigtomtakavlen-49', '250418-Stigtomtakavlen-50', '250418-Stigtomtakavlen-51', '250418-Stigtomtakavlen-52', '250418-Stigtomtakavlen-53', '250418-Stigtomtakavlen-54',
-        '250418-Stigtomtakavlen-55', '250418-Stigtomtakavlen-56', '250418-Stigtomtakavlen-57'],
-
-    'Ormingemedeln': ['250412-Orminge_medeln-1', '250412-Orminge_medeln-2', '250412-Orminge_medeln-3', '250412-Orminge_medeln-4', '250412-Orminge_medeln-5', '250412-Orminge_medeln-6',
-        '250412-Orminge_medeln-7', '250412-Orminge_medeln-8', '250412-Orminge_medeln-9', '250412-Orminge_medeln-10', '250412-Orminge_medeln-11', '250412-Orminge_medeln-12',
-        '250412-Orminge_medeln-13', '250412-Orminge_medeln-14', '250412-Orminge_medeln-15', '250412-Orminge_medeln-16', '250412-Orminge_medeln-17', '250412-Orminge_medeln-18',
-        '250412-Orminge_medeln-19', '250412-Orminge_medeln-20', '250412-Orminge_medeln-21', '250412-Orminge_medeln-22', '250412-Orminge_medeln-23', '250412-Orminge_medeln-24',
-        '250412-Orminge_medeln-25', '250412-Orminge_medeln-26', '250412-Orminge_medeln-27', '250412-Orminge_medeln-28', '250412-Orminge_medeln-29', '250412-Orminge_medeln-30',
-        '250412-Orminge_medeln-31', '250412-Orminge_medeln-32', '250412-Orminge_medeln-33', '250412-Orminge_medeln-34', '250412-Orminge_medeln-35', '250412-Orminge_medeln-36',
-        '250412-Orminge_medeln-37', '250412-Orminge_medeln-38', '250412-Orminge_medeln-39', '250412-Orminge_medeln-40', '250412-Orminge_medeln-41', '250412-Orminge_medeln-42',
-        '250412-Orminge_medeln-43', '250412-Orminge_medeln-44', '250412-Orminge_medeln-45', '250412-Orminge_medeln-47', '250412-Orminge_medeln-46', '250412-Orminge_medeln-48',
-        '250412-Orminge_medeln-49', '250412-Orminge_medeln-50', '250412-Orminge_medeln-51', '250412-Orminge_medeln-52', '250412-Orminge_medeln-53', '250412-Orminge_medeln-54',
-        '250412-Orminge_medeln-55', '250412-Orminge_medeln-56', '250412-Orminge_medeln-58', '250412-Orminge_medeln-57', '250412-Orminge_medeln-59', '250412-Orminge_medeln-60',
-        '250412-Orminge_medeln-61', '250412-Orminge_medeln-62', '250412-Orminge_medeln-63', '250412-Orminge_medeln-64', '250412-Orminge_medeln-65', '250412-Orminge_medeln-66',
-        '250412-Orminge_medeln-67', '250412-Orminge_medeln-68', '250412-Orminge_medeln-69', '250412-Orminge_medeln-70', '250412-Orminge_medeln-71', '250412-Orminge_medeln-72',
-        '250412-Orminge_medeln-73', '250412-Orminge_medeln-74'],
-
-};
-
-const filterBtnContainer = document.getElementById("filter-container");
-const imageContainer = document.getElementById('image-container')
-
-const filterBtnFunction = (span, event) => {
-    let activeFilter = document.getElementById('active');
-    activeFilter.removeAttribute('id');
-    span.setAttribute('id', 'active')
-    imageContainer.innerHTML = '';
-    initializeGallery(images[event], 'media/sports');
-}
+async function loadJSON() {
+      const response = await fetch('assets/js/images.json');
+      const data = await response.json();
+      return data;
+    }
 
 document.addEventListener("DOMContentLoaded", () => {
-    initializeGallery(images[Object.keys(images)[0]], 'media/sports')
+  init();
+});
 
-    let flag = 0
-    Object.keys(images).forEach(event => {
-        const span = document.createElement("span");
-        span.textContent = event;
-        span.classList.add('filter')
-        if (flag == 0) {
-            span.setAttribute('id', 'active')
-            flag = 1
-        }
+async function init() {
+  const images = await loadJSON();
+  console.log(images)
+  const filterBtnContainer = document.getElementById("filter-container");
+  const imageContainer = document.getElementById("image-container")
 
-        span.addEventListener("click", () => {
-            filterBtnFunction(span, event)
-        });
 
-        filterBtnContainer.appendChild(span);
+    const filterBtnFunction = (span, event) => {
+        let activeFilter = document.getElementById("active");
+        activeFilter.removeAttribute("id");
+        span.setAttribute("id", "active")
+        imageContainer.innerHTML = "";
+        initializeGallery(images[event], "media/sports");
+    }
+
+  let flag = 0;
+  Object.keys(images).forEach((event) => {
+    const span = document.createElement("span");
+    span.textContent = event;
+    span.classList.add("filter");
+
+    const params = new URLSearchParams(window.location.search);
+    const catalogue = params.get("catalogue");
+    console.log(catalogue);
+    if (flag === 0 & catalogue === null) {
+      span.setAttribute("id", "active");
+      flag = 1;
+      initializeGallery(images[Object.keys(images)[0]], "media/sports");
+    }
+    else if (catalogue === event){
+      span.setAttribute("id", "active");
+      initializeGallery(images[event], "media/sports");
+    }
+
+
+    span.addEventListener("click", () => {
+      filterBtnFunction(span, event);
     });
 
     filterBtnContainer.appendChild(span);
   });
 
-
+  if (window.updateButtonVisibility) {
+    window.updateButtonVisibility();
+  }
+}
