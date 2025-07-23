@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function init() {
   const images = await loadJSON();
-  console.log(images)
   const filterBtnContainer = document.getElementById("filter-container");
   const imageContainer = document.getElementById("image-container")
 
@@ -33,7 +32,6 @@ async function init() {
 
     const params = new URLSearchParams(window.location.search);
     const catalogue = params.get("catalogue");
-    console.log(catalogue);
     if (flag === 0 & catalogue === null) {
       span.setAttribute("id", "active");
       flag = 1;
