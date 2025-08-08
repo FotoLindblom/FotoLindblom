@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(255, 255, 255);
   }
 
 body{
@@ -54,6 +55,7 @@ nav ul li {
 }
 nav ul li:first-child {
     border-left: 2px solid rgb(255, 255, 255);
+    margin-left: 10px;
 
 } 
 
@@ -67,7 +69,6 @@ nav ul li a {
     display: block;
     padding: 0 20px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
 /* footer <-------------------------------------------------- */
@@ -95,6 +96,16 @@ footer ul {
 
 footer ul.socials {
     align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul.socials li {
+    margin-left: 7px;
+}
+
+footer ul.socials li:first-child {
+    margin-left: 0;
 }
 
 footer img {

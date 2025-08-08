@@ -3,12 +3,12 @@ section.hero {
     background-image: url("../images/SelfPortraitVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     text-align: center;
     overflow: hidden;
 }
 
-@media (min-aspect-ratio: 1/1) {
+@media (min-aspect-ratio: 1/1.5) {
     section.hero {
         background-image: url("../images/SelfPortraitHorizontal.jpg");
     }
@@ -39,7 +39,7 @@ section a h1 {
 }
 
 section.contact {
-    height: 56.25vw;
+    height: 50vh;
     background-image: url("../images/LandscapeVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +51,6 @@ section.contact {
 
 @media (min-aspect-ratio: 1/1) {
     section.contact {
-        height: 37.5vw;
         background-image: url("../images/LandscapeHorizontal.jpg");
     }
 }
