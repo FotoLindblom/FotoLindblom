@@ -23,8 +23,8 @@ main section {
 main section img {
     width: calc(100vw - 75px);
     align-self: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -65,10 +65,6 @@ main section div h2{
     margin-bottom: 10px;
 }
 
-main section div span{
-    /* align-self: center; */
-}
-
 section div a {
     text-decoration: none;
     margin-top: 25px;
@@ -83,12 +79,4 @@ section div a h1 {
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-}
-
-@media (min-aspect-ratio: 1/1) {
-    section div a h1 {
-        font-size: 1.2em;
-        padding: 10px;
-        border-radius: 20px;
-    }
 }

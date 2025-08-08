@@ -56,7 +56,6 @@ nav ul li {
 nav ul li:first-child {
     border-left: 2px solid rgb(255, 255, 255);
     margin-left: 10px;
-
 } 
 
 nav ul li:hover {
@@ -69,6 +68,12 @@ nav ul li a {
     display: block;
     padding: 0 20px;
     text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    nav ul li a {
+        padding: 0 15px;
+    }
 }
 
 /* footer <-------------------------------------------------- */
