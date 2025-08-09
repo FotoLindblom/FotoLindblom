@@ -38,9 +38,20 @@ section a h1 {
     }
 }
 
+section.about {
+    height: 50vh;
+    background-image: url("../images/Landscape2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
 section.contact {
     height: 50vh;
-    background-image: url("../images/LandscapeVertical.jpg");
+    background-image: url("../images/Landscape.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -49,8 +60,3 @@ section.contact {
     position: relative;
 }
 
-@media (min-aspect-ratio: 1/1) {
-    section.contact {
-        background-image: url("../images/LandscapeHorizontal.jpg");
-    }
-}
