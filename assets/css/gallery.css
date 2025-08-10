@@ -3,22 +3,45 @@ main {
     flex-direction: column;
 }
 
-section {
-    width: 100%;
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 10px;
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+}
+
+main section {
+    object-fit: none;
+    width: calc(100vw - 30px);
+    height: auto;
+    object-fit: contain;
     aspect-ratio: 1 / 1;
-    text-align: center;
-    margin-top: 25px;
-
+    position: relative;
+    margin-bottom: 25px;
 }
 
-section:first-child{
-    margin-top: 0;
+main section:last-child {
+    margin-bottom: 0;
 }
 
+@media (min-aspect-ratio: 1/1) {
+    main section {
+        width: calc(50vw - 80px);
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 
-section a {
+    main section:nth-last-child(2):nth-child(odd) {
+        margin-bottom: 0;
+    }
+}
+
+main section a {
     display: inline-block;
-    margin-top: 75%;
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
@@ -26,17 +49,22 @@ section a {
     background-color: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
     backdrop-filter: blur(3px);
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
 }
 
 section#sports {
-    background-image: url("../images/PlaceholderCategory.jpg");
+    background-image: url("../images/SelfPortrait2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
-section#wildlife {
-    background-image: url("../images/PlaceholderCategory.jpg");
+section#other {
+    background-image: url("../images/SelfPortrait2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

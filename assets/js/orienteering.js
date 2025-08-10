@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function init() {
-  const images = await loadJSON();
+  const json = await loadJSON();
   const filterBtnContainer = document.getElementById("filter-container");
   const imageContainer = document.getElementById("image-container")
 
+  const images = json["orienteering"]
 
     const filterBtnFunction = (span, event) => {
         let activeFilter = document.getElementById("active");
