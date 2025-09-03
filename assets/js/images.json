@@ -1,5 +1,17 @@
 {
     "orienteering" : {
+        "Gröna Lund-Sprinten" : ["250903-Grona_Lund_SP-1", "250903-Grona_Lund_SP-3", "250903-Grona_Lund_SP-2", "250903-Grona_Lund_SP-4", "250903-Grona_Lund_SP-5", "250903-Grona_Lund_SP-6", "250903-Grona_Lund_SP-7", "250903-Grona_Lund_SP-8", 
+        "250903-Grona_Lund_SP-9", "250903-Grona_Lund_SP-10", "250903-Grona_Lund_SP-11", "250903-Grona_Lund_SP-12", "250903-Grona_Lund_SP-13", "250903-Grona_Lund_SP-14", "250903-Grona_Lund_SP-15", "250903-Grona_Lund_SP-16", 
+        "250903-Grona_Lund_SP-17", "250903-Grona_Lund_SP-18", "250903-Grona_Lund_SP-19", "250903-Grona_Lund_SP-20", "250903-Grona_Lund_SP-21", "250903-Grona_Lund_SP-22", "250903-Grona_Lund_SP-23", "250903-Grona_Lund_SP-24", 
+        "250903-Grona_Lund_SP-25", "250903-Grona_Lund_SP-26", "250903-Grona_Lund_SP-27", "250903-Grona_Lund_SP-28", "250903-Grona_Lund_SP-29", "250903-Grona_Lund_SP-30", "250903-Grona_Lund_SP-31", "250903-Grona_Lund_SP-32", 
+        "250903-Grona_Lund_SP-33", "250903-Grona_Lund_SP-34", "250903-Grona_Lund_SP-35", "250903-Grona_Lund_SP-36", "250903-Grona_Lund_SP-37", "250903-Grona_Lund_SP-38", "250903-Grona_Lund_SP-39", "250903-Grona_Lund_SP-40", 
+        "250903-Grona_Lund_SP-42", "250903-Grona_Lund_SP-43", "250903-Grona_Lund_SP-41", "250903-Grona_Lund_SP-44", "250903-Grona_Lund_SP-45", "250903-Grona_Lund_SP-46", "250903-Grona_Lund_SP-47", "250903-Grona_Lund_SP-48", 
+        "250903-Grona_Lund_SP-49", "250903-Grona_Lund_SP-50", "250903-Grona_Lund_SP-51", "250903-Grona_Lund_SP-52", "250903-Grona_Lund_SP-53", "250903-Grona_Lund_SP-54", "250903-Grona_Lund_SP-56", "250903-Grona_Lund_SP-57", 
+        "250903-Grona_Lund_SP-58", "250903-Grona_Lund_SP-59", "250903-Grona_Lund_SP-60", "250903-Grona_Lund_SP-61", "250903-Grona_Lund_SP-62", "250903-Grona_Lund_SP-55", "250903-Grona_Lund_SP-63", "250903-Grona_Lund_SP-64", 
+        "250903-Grona_Lund_SP-65", "250903-Grona_Lund_SP-66", "250903-Grona_Lund_SP-67", "250903-Grona_Lund_SP-68", "250903-Grona_Lund_SP-69", "250903-Grona_Lund_SP-70", "250903-Grona_Lund_SP-71", "250903-Grona_Lund_SP-72", 
+        "250903-Grona_Lund_SP-73", "250903-Grona_Lund_SP-74", "250903-Grona_Lund_SP-75", "250903-Grona_Lund_SP-76", "250903-Grona_Lund_SP-77", "250903-Grona_Lund_SP-78", "250903-Grona_Lund_SP-79", "250903-Grona_Lund_SP-80", 
+        "250903-Grona_Lund_SP-81", "250903-Grona_Lund_SP-82", "250903-Grona_Lund_SP-83", "250903-Grona_Lund_SP-84", "250903-Grona_Lund_SP-85", "250903-Grona_Lund_SP-86"],
+
         "Knockout SM" : ["250817-KnockOut_SM-1", "250817-KnockOut_SM-2", "250817-KnockOut_SM-4", "250817-KnockOut_SM-3", "250817-KnockOut_SM-5", "250817-KnockOut_SM-6", "250817-KnockOut_SM-7", "250817-KnockOut_SM-8", 
         "250817-KnockOut_SM-9", "250817-KnockOut_SM-10", "250817-KnockOut_SM-11", "250817-KnockOut_SM-12", "250817-KnockOut_SM-13", "250817-KnockOut_SM-14", "250817-KnockOut_SM-15", "250817-KnockOut_SM-16", 
         "250817-KnockOut_SM-17", "250817-KnockOut_SM-18", "250817-KnockOut_SM-19", "250817-KnockOut_SM-20", "250817-KnockOut_SM-21", "250817-KnockOut_SM-22", "250817-KnockOut_SM-24", "250817-KnockOut_SM-25", 
