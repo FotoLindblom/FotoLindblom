@@ -260,29 +260,6 @@
         "250529-SL5_Sprint-43", "250529-SL5_Sprint-44", "250529-SL5_Sprint-45", "250529-SL5_Sprint-46", "250529-SL5_Sprint-47", "250529-SL5_Sprint-48", "250529-SL5_Sprint-49", 
         "250529-SL5_Sprint-50", "250529-SL5_Sprint-51", "250529-SL5_Sprint-52", "250529-SL5_Sprint-53", "250529-SL5_Sprint-54", "250529-SL5_Sprint-55", "250529-SL5_Sprint-56", 
         "250529-SL5_Sprint-57", "250529-SL5_Sprint-58", "250529-SL5_Sprint-59", "250529-SL5_Sprint-60", "250529-SL5_Sprint-61", "250529-SL5_Sprint-62", "250529-SL5_Sprint-63", 
-        "250529-SL5_Sprint-64", "250529-SL5_Sprint-65"],
-
-        "Stockholm City Cup, #2" : ["250521_SCC2-1", "250521_SCC2-2", "250521_SCC2-3", "250521_SCC2-4", "250521_SCC2-5", "250521_SCC2-6", "250521_SCC2-7", "250521_SCC2-8", "250521_SCC2-9", 
-        "250521_SCC2-10", "250521_SCC2-11", "250521_SCC2-12", "250521_SCC2-13", "250521_SCC2-14", "250521_SCC2-15", "250521_SCC2-16", "250521_SCC2-17", "250521_SCC2-18", "250521_SCC2-19", 
-        "250521_SCC2-20", "250521_SCC2-21", "250521_SCC2-22", "250521_SCC2-23", "250521_SCC2-24", "250521_SCC2-25", "250521_SCC2-26", "250521_SCC2-27", "250521_SCC2-28", "250521_SCC2-29", 
-        "250521_SCC2-30", "250521_SCC2-31", "250521_SCC2-32", "250521_SCC2-33", "250521_SCC2-34", "250521_SCC2-35", "250521_SCC2-36", "250521_SCC2-37", "250521_SCC2-38", "250521_SCC2-39", 
-        "250521_SCC2-40", "250521_SCC2-41", "250521_SCC2-42", "250521_SCC2-43", "250521_SCC2-44", "250521_SCC2-45", "250521_SCC2-46", "250521_SCC2-47", "250521_SCC2-48", "250521_SCC2-49", 
-        "250521_SCC2-50", "250521_SCC2-51", "250521_SCC2-52", "250521_SCC2-53", "250521_SCC2-54", "250521_SCC2-55", "250521_SCC2-56", "250521_SCC2-57", "250521_SCC2-58", "250521_SCC2-59", 
-        "250521_SCC2-60", "250521_SCC2-61", "250521_SCC2-62", "250521_SCC2-63", "250521_SCC2-64", "250521_SCC2-65", "250521_SCC2-66", "250521_SCC2-67", "250521_SCC2-68", "250521_SCC2-69"],
-
-        "Stockholm City Cup, #1" : ["250514-SCC1_Gammla_stan-1", "250514-SCC1_Gammla_stan-2", "250514-SCC1_Gammla_stan-3", "250514-SCC1_Gammla_stan-4", "250514-SCC1_Gammla_stan-5", 
-            "250514-SCC1_Gammla_stan-6", "250514-SCC1_Gammla_stan-7", "250514-SCC1_Gammla_stan-8", "250514-SCC1_Gammla_stan-9", "250514-SCC1_Gammla_stan-10", 
-            "250514-SCC1_Gammla_stan-11", "250514-SCC1_Gammla_stan-12", "250514-SCC1_Gammla_stan-13", "250514-SCC1_Gammla_stan-14", "250514-SCC1_Gammla_stan-15", 
-            "250514-SCC1_Gammla_stan-16", "250514-SCC1_Gammla_stan-17", "250514-SCC1_Gammla_stan-18", "250514-SCC1_Gammla_stan-19", "250514-SCC1_Gammla_stan-20", 
-            "250514-SCC1_Gammla_stan-21", "250514-SCC1_Gammla_stan-22", "250514-SCC1_Gammla_stan-23", "250514-SCC1_Gammla_stan-24", "250514-SCC1_Gammla_stan-25", 
-            "250514-SCC1_Gammla_stan-26", "250514-SCC1_Gammla_stan-27", "250514-SCC1_Gammla_stan-28", "250514-SCC1_Gammla_stan-29", "250514-SCC1_Gammla_stan-30", 
-            "250514-SCC1_Gammla_stan-31", "250514-SCC1_Gammla_stan-32", "250514-SCC1_Gammla_stan-33", "250514-SCC1_Gammla_stan-34", "250514-SCC1_Gammla_stan-35", 
-            "250514-SCC1_Gammla_stan-36", "250514-SCC1_Gammla_stan-37", "250514-SCC1_Gammla_stan-38", "250514-SCC1_Gammla_stan-39", "250514-SCC1_Gammla_stan-40", 
-            "250514-SCC1_Gammla_stan-41", "250514-SCC1_Gammla_stan-42", "250514-SCC1_Gammla_stan-43", "250514-SCC1_Gammla_stan-44", "250514-SCC1_Gammla_stan-45", 
-            "250514-SCC1_Gammla_stan-46", "250514-SCC1_Gammla_stan-47", "250514-SCC1_Gammla_stan-48", "250514-SCC1_Gammla_stan-49", "250514-SCC1_Gammla_stan-50", 
-            "250514-SCC1_Gammla_stan-51", "250514-SCC1_Gammla_stan-52", "250514-SCC1_Gammla_stan-53", "250514-SCC1_Gammla_stan-54", "250514-SCC1_Gammla_stan-55", 
-            "250514-SCC1_Gammla_stan-56", "250514-SCC1_Gammla_stan-57", "250514-SCC1_Gammla_stan-58", "250514-SCC1_Gammla_stan-59", "250514-SCC1_Gammla_stan-60", 
-            "250514-SCC1_Gammla_stan-61", "250514-SCC1_Gammla_stan-62", "250514-SCC1_Gammla_stan-63", "250514-SCC1_Gammla_stan-64", "250514-SCC1_Gammla_stan-65", 
-            "250514-SCC1_Gammla_stan-66", "250514-SCC1_Gammla_stan-67", "250514-SCC1_Gammla_stan-68", "250514-SCC1_Gammla_stan-69", "250514-SCC1_Gammla_stan-70"]
+        "250529-SL5_Sprint-64", "250529-SL5_Sprint-65"]
     }
 }
