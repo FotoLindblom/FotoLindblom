@@ -1,5 +1,22 @@
 {
     "orienteering" : {
+        "DM Lång" : ["250906-DM-Lang-1", "250906-DM-Lang-2", "250906-DM-Lang-3", "250906-DM-Lang-4", "250906-DM-Lang-5", "250906-DM-Lang-6", "250906-DM-Lang-7", "250906-DM-Lang-8", "250906-DM-Lang-9", "250906-DM-Lang-10", 
+        "250906-DM-Lang-11", "250906-DM-Lang-12", "250906-DM-Lang-13", "250906-DM-Lang-14", "250906-DM-Lang-15", "250906-DM-Lang-16", "250906-DM-Lang-17", "250906-DM-Lang-18", "250906-DM-Lang-19", "250906-DM-Lang-20", "250906-DM-Lang-21", 
+        "250906-DM-Lang-22", "250906-DM-Lang-23", "250906-DM-Lang-24", "250906-DM-Lang-25", "250906-DM-Lang-26", "250906-DM-Lang-27", "250906-DM-Lang-28", "250906-DM-Lang-29", "250906-DM-Lang-30", "250906-DM-Lang-31", "250906-DM-Lang-32", 
+        "250906-DM-Lang-33", "250906-DM-Lang-34", "250906-DM-Lang-35", "250906-DM-Lang-36", "250906-DM-Lang-37", "250906-DM-Lang-38", "250906-DM-Lang-39", "250906-DM-Lang-40", "250906-DM-Lang-41", "250906-DM-Lang-42", "250906-DM-Lang-43", 
+        "250906-DM-Lang-44", "250906-DM-Lang-45", "250906-DM-Lang-46", "250906-DM-Lang-47", "250906-DM-Lang-48", "250906-DM-Lang-49", "250906-DM-Lang-50", "250906-DM-Lang-51", "250906-DM-Lang-52", "250906-DM-Lang-53", "250906-DM-Lang-54", 
+        "250906-DM-Lang-55", "250906-DM-Lang-56", "250906-DM-Lang-57", "250906-DM-Lang-58", "250906-DM-Lang-59", "250906-DM-Lang-60", "250906-DM-Lang-61", "250906-DM-Lang-62", "250906-DM-Lang-63", "250906-DM-Lang-64", "250906-DM-Lang-65", 
+        "250906-DM-Lang-66", "250906-DM-Lang-67", "250906-DM-Lang-68", "250906-DM-Lang-69", "250906-DM-Lang-70", "250906-DM-Lang-71", "250906-DM-Lang-72", "250906-DM-Lang-73", "250906-DM-Lang-74", "250906-DM-Lang-75", "250906-DM-Lang-76", 
+        "250906-DM-Lang-77", "250906-DM-Lang-78", "250906-DM-Lang-79", "250906-DM-Lang-80", "250906-DM-Lang-81", "250906-DM-Lang-82", "250906-DM-Lang-83", "250906-DM-Lang-84", "250906-DM-Lang-85", "250906-DM-Lang-86", "250906-DM-Lang-87", 
+        "250906-DM-Lang-88", "250906-DM-Lang-89", "250906-DM-Lang-90", "250906-DM-Lang-91", "250906-DM-Lang-92", "250906-DM-Lang-93", "250906-DM-Lang-94", "250906-DM-Lang-95", "250906-DM-Lang-96", "250906-DM-Lang-97", "250906-DM-Lang-98", 
+        "250906-DM-Lang-99", "250906-DM-Lang-100", "250906-DM-Lang-101", "250906-DM-Lang-102", "250906-DM-Lang-103", "250906-DM-Lang-104", "250906-DM-Lang-105", "250906-DM-Lang-106", "250906-DM-Lang-107", "250906-DM-Lang-108", 
+        "250906-DM-Lang-109", "250906-DM-Lang-110", "250906-DM-Lang-111", "250906-DM-Lang-112", "250906-DM-Lang-113", "250906-DM-Lang-114", "250906-DM-Lang-115", "250906-DM-Lang-116", "250906-DM-Lang-117", "250906-DM-Lang-118", 
+        "250906-DM-Lang-119", "250906-DM-Lang-120", "250906-DM-Lang-121", "250906-DM-Lang-122", "250906-DM-Lang-123", "250906-DM-Lang-124", "250906-DM-Lang-125", "250906-DM-Lang-126", "250906-DM-Lang-127", "250906-DM-Lang-128", 
+        "250906-DM-Lang-129", "250906-DM-Lang-130", "250906-DM-Lang-131", "250906-DM-Lang-132", "250906-DM-Lang-133", "250906-DM-Lang-134", "250906-DM-Lang-135", "250906-DM-Lang-136", "250906-DM-Lang-137", "250906-DM-Lang-138", 
+        "250906-DM-Lang-139", "250906-DM-Lang-140", "250906-DM-Lang-141", "250906-DM-Lang-142", "250906-DM-Lang-143", "250906-DM-Lang-144", "250906-DM-Lang-145", "250906-DM-Lang-146", "250906-DM-Lang-147", "250906-DM-Lang-148", 
+        "250906-DM-Lang-149", "250906-DM-Lang-150", "250906-DM-Lang-151", "250906-DM-Lang-152", "250906-DM-Lang-153", "250906-DM-Lang-154", "250906-DM-Lang-155", "250906-DM-Lang-156", "250906-DM-Lang-157", "250906-DM-Lang-158", 
+        "250906-DM-Lang-159", "250906-DM-Lang-160"],
+
         "Gröna Lund-Sprinten" : ["250903-Grona_Lund_SP-1", "250903-Grona_Lund_SP-3", "250903-Grona_Lund_SP-2", "250903-Grona_Lund_SP-4", "250903-Grona_Lund_SP-5", "250903-Grona_Lund_SP-6", "250903-Grona_Lund_SP-7", "250903-Grona_Lund_SP-8", 
         "250903-Grona_Lund_SP-9", "250903-Grona_Lund_SP-10", "250903-Grona_Lund_SP-11", "250903-Grona_Lund_SP-12", "250903-Grona_Lund_SP-13", "250903-Grona_Lund_SP-14", "250903-Grona_Lund_SP-15", "250903-Grona_Lund_SP-16", 
         "250903-Grona_Lund_SP-17", "250903-Grona_Lund_SP-18", "250903-Grona_Lund_SP-19", "250903-Grona_Lund_SP-20", "250903-Grona_Lund_SP-21", "250903-Grona_Lund_SP-22", "250903-Grona_Lund_SP-23", "250903-Grona_Lund_SP-24", 
