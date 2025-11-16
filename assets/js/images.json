@@ -1,5 +1,16 @@
 {
     "orienteering" : {
+        "TMOK Indoor" : ["251116-TMOK_Indoor-1", "251116-TMOK_Indoor-2", "251116-TMOK_Indoor-3", "251116-TMOK_Indoor-4", "251116-TMOK_Indoor-5", "251116-TMOK_Indoor-6", "251116-TMOK_Indoor-7", "251116-TMOK_Indoor-8", 
+        "251116-TMOK_Indoor-9", "251116-TMOK_Indoor-10", "251116-TMOK_Indoor-11", "251116-TMOK_Indoor-13", "251116-TMOK_Indoor-14", "251116-TMOK_Indoor-12", "251116-TMOK_Indoor-15", "251116-TMOK_Indoor-16", 
+        "251116-TMOK_Indoor-17", "251116-TMOK_Indoor-18", "251116-TMOK_Indoor-19", "251116-TMOK_Indoor-20", "251116-TMOK_Indoor-21", "251116-TMOK_Indoor-22", "251116-TMOK_Indoor-23", "251116-TMOK_Indoor-24", 
+        "251116-TMOK_Indoor-25", "251116-TMOK_Indoor-26", "251116-TMOK_Indoor-27", "251116-TMOK_Indoor-28", "251116-TMOK_Indoor-29", "251116-TMOK_Indoor-30", "251116-TMOK_Indoor-31", "251116-TMOK_Indoor-32", 
+        "251116-TMOK_Indoor-33", "251116-TMOK_Indoor-34", "251116-TMOK_Indoor-35", "251116-TMOK_Indoor-36", "251116-TMOK_Indoor-37", "251116-TMOK_Indoor-38", "251116-TMOK_Indoor-39", "251116-TMOK_Indoor-40", 
+        "251116-TMOK_Indoor-41", "251116-TMOK_Indoor-42", "251116-TMOK_Indoor-43", "251116-TMOK_Indoor-44", "251116-TMOK_Indoor-45", "251116-TMOK_Indoor-46", "251116-TMOK_Indoor-47", "251116-TMOK_Indoor-48", 
+        "251116-TMOK_Indoor-49", "251116-TMOK_Indoor-50", "251116-TMOK_Indoor-51", "251116-TMOK_Indoor-52", "251116-TMOK_Indoor-53", "251116-TMOK_Indoor-54", "251116-TMOK_Indoor-55", "251116-TMOK_Indoor-56", 
+        "251116-TMOK_Indoor-57", "251116-TMOK_Indoor-58", "251116-TMOK_Indoor-59", "251116-TMOK_Indoor-60", "251116-TMOK_Indoor-61", "251116-TMOK_Indoor-62", "251116-TMOK_Indoor-63", "251116-TMOK_Indoor-64", 
+        "251116-TMOK_Indoor-65", "251116-TMOK_Indoor-66", "251116-TMOK_Indoor-67", "251116-TMOK_Indoor-68", "251116-TMOK_Indoor-69", "251116-TMOK_Indoor-70", "251116-TMOK_Indoor-71", "251116-TMOK_Indoor-72", 
+        "251116-TMOK_Indoor-73", "251116-TMOK_Indoor-74", "251116-TMOK_Indoor-75", "251116-TMOK_Indoor-76", "251116-TMOK_Indoor-77", "251116-TMOK_Indoor-78", "251116-TMOK_Indoor-79", "251116-TMOK_Indoor-80"],   
+
         "25 Manna Medeln" : ["251012-25Manna_Medeln-1", "251012-25Manna_Medeln-2", "251012-25Manna_Medeln-3", "251012-25Manna_Medeln-4", "251012-25Manna_Medeln-5", "251012-25Manna_Medeln-6", "251012-25Manna_Medeln-7", 
         "251012-25Manna_Medeln-8", "251012-25Manna_Medeln-9", "251012-25Manna_Medeln-10", "251012-25Manna_Medeln-11", "251012-25Manna_Medeln-12", "251012-25Manna_Medeln-13", "251012-25Manna_Medeln-14", 
         "251012-25Manna_Medeln-15", "251012-25Manna_Medeln-16", "251012-25Manna_Medeln-17", "251012-25Manna_Medeln-18", "251012-25Manna_Medeln-19", "251012-25Manna_Medeln-20", "251012-25Manna_Medeln-21", 

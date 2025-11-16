@@ -19,4 +19,5 @@ for file in all_files_list:
         all_files_dict[file.split("-")[0]] = [file]
 
 for x in all_files_dict:
-    print(f"{json.dumps(x)} : {json.dumps(all_files_dict[x])}, ")
+    if x == 251116:
+        print(f"{json.dumps(x)} : {json.dumps(all_files_dict[x])}, ")
