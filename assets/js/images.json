@@ -1,5 +1,14 @@
 {
     "orienteering" : {
+        "Viken Indoor" : ["251122-Viken_Indoor_E1-1", "251122-Viken_Indoor_E1-2", "251122-Viken_Indoor_E1-3", "251122-Viken_Indoor_E1-4", "251122-Viken_Indoor_E1-5", "251122-Viken_Indoor_E1-6", "251122-Viken_Indoor_E1-7", 
+        "251122-Viken_Indoor_E1-8", "251122-Viken_Indoor_E1-9", "251122-Viken_Indoor_E1-10", "251122-Viken_Indoor_E1-11", "251122-Viken_Indoor_E1-12", "251122-Viken_Indoor_E1-13", "251122-Viken_Indoor_E1-14", 
+        "251122-Viken_Indoor_E1-15", "251122-Viken_Indoor_E1-16", "251122-Viken_Indoor_E1-17", "251122-Viken_Indoor_E1-18", "251122-Viken_Indoor_E1-19", "251122-Viken_Indoor_E1-20", "251122-Viken_Indoor_E1-21", 
+        "251122-Viken_Indoor_E1-22", "251122-Viken_Indoor_E1-23", "251122-Viken_Indoor_E1-24", "251122-Viken_Indoor_E1-25", "251122-Viken_Indoor_E1-26", "251122-Viken_Indoor_E1-27", "251122-Viken_Indoor_E1-28", 
+        "251122-Viken_Indoor_E1-29", "251122-Viken_Indoor_E1-30", "251122-Viken_Indoor_E1-31", "251122-Viken_Indoor_E1-32", "251122-Viken_Indoor_E1-33", "251122-Viken_Indoor_E1-34", "251122-Viken_Indoor_E1-35", 
+        "251122-Viken_Indoor_E1-36", "251122-Viken_Indoor_E1-37", "251122-Viken_Indoor_E1-38", "251122-Viken_Indoor_E1-39", "251122-Viken_Indoor_E1-40", "251122-Viken_Indoor_E1-41", "251122-Viken_Indoor_E1-42", 
+        "251122-Viken_Indoor_E1-43", "251122-Viken_Indoor_E1-44", "251122-Viken_Indoor_E1-45", "251122-Viken_Indoor_E1-46", "251122-Viken_Indoor_E1-47", "251122-Viken_Indoor_E1-48", "251122-Viken_Indoor_E1-49", 
+        "251122-Viken_Indoor_E1-50", "251122-Viken_Indoor_E1-51", "251122-Viken_Indoor_E1-52", "251122-Viken_Indoor_E1-53", "251122-Viken_Indoor_E1-54", "251122-Viken_Indoor_E1-55", "251122-Viken_Indoor_E1-56"],
+
         "TMOK Indoor" : ["251116-TMOK_Indoor-1", "251116-TMOK_Indoor-2", "251116-TMOK_Indoor-3", "251116-TMOK_Indoor-4", "251116-TMOK_Indoor-5", "251116-TMOK_Indoor-6", "251116-TMOK_Indoor-7", "251116-TMOK_Indoor-8", 
         "251116-TMOK_Indoor-9", "251116-TMOK_Indoor-10", "251116-TMOK_Indoor-11", "251116-TMOK_Indoor-13", "251116-TMOK_Indoor-14", "251116-TMOK_Indoor-12", "251116-TMOK_Indoor-15", "251116-TMOK_Indoor-16", 
         "251116-TMOK_Indoor-17", "251116-TMOK_Indoor-18", "251116-TMOK_Indoor-19", "251116-TMOK_Indoor-20", "251116-TMOK_Indoor-21", "251116-TMOK_Indoor-22", "251116-TMOK_Indoor-23", "251116-TMOK_Indoor-24", 
