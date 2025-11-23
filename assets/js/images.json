@@ -1,6 +1,16 @@
 {
     "orienteering" : {
-        "Viken Indoor" : ["251122-Viken_Indoor_E1-1", "251122-Viken_Indoor_E1-2", "251122-Viken_Indoor_E1-3", "251122-Viken_Indoor_E1-4", "251122-Viken_Indoor_E1-5", "251122-Viken_Indoor_E1-6", "251122-Viken_Indoor_E1-7", 
+        "Viken Indoor E2" : ["251123-Viken_Indoor_E2-1", "251123-Viken_Indoor_E2-2", "251123-Viken_Indoor_E2-3", "251123-Viken_Indoor_E2-4", "251123-Viken_Indoor_E2-5", "251123-Viken_Indoor_E2-7", "251123-Viken_Indoor_E2-8", 
+        "251123-Viken_Indoor_E2-9", "251123-Viken_Indoor_E2-10", "251123-Viken_Indoor_E2-11", "251123-Viken_Indoor_E2-6", "251123-Viken_Indoor_E2-12", "251123-Viken_Indoor_E2-13", "251123-Viken_Indoor_E2-14", 
+        "251123-Viken_Indoor_E2-15", "251123-Viken_Indoor_E2-16", "251123-Viken_Indoor_E2-17", "251123-Viken_Indoor_E2-18", "251123-Viken_Indoor_E2-19", "251123-Viken_Indoor_E2-20", "251123-Viken_Indoor_E2-21", 
+        "251123-Viken_Indoor_E2-22", "251123-Viken_Indoor_E2-23", "251123-Viken_Indoor_E2-24", "251123-Viken_Indoor_E2-25", "251123-Viken_Indoor_E2-26", "251123-Viken_Indoor_E2-27", "251123-Viken_Indoor_E2-28", 
+        "251123-Viken_Indoor_E2-29", "251123-Viken_Indoor_E2-30", "251123-Viken_Indoor_E2-31", "251123-Viken_Indoor_E2-32", "251123-Viken_Indoor_E2-33", "251123-Viken_Indoor_E2-34", "251123-Viken_Indoor_E2-35", 
+        "251123-Viken_Indoor_E2-36", "251123-Viken_Indoor_E2-37", "251123-Viken_Indoor_E2-38", "251123-Viken_Indoor_E2-39", "251123-Viken_Indoor_E2-40", "251123-Viken_Indoor_E2-41", "251123-Viken_Indoor_E2-42", 
+        "251123-Viken_Indoor_E2-43", "251123-Viken_Indoor_E2-44", "251123-Viken_Indoor_E2-45", "251123-Viken_Indoor_E2-46", "251123-Viken_Indoor_E2-47", "251123-Viken_Indoor_E2-48", "251123-Viken_Indoor_E2-49", 
+        "251123-Viken_Indoor_E2-50", "251123-Viken_Indoor_E2-51", "251123-Viken_Indoor_E2-52", "251123-Viken_Indoor_E2-53", "251123-Viken_Indoor_E2-54", "251123-Viken_Indoor_E2-55", "251123-Viken_Indoor_E2-56", 
+        "251123-Viken_Indoor_E2-57", "251123-Viken_Indoor_E2-58"],
+
+        "Viken Indoor E1" : ["251122-Viken_Indoor_E1-1", "251122-Viken_Indoor_E1-2", "251122-Viken_Indoor_E1-3", "251122-Viken_Indoor_E1-4", "251122-Viken_Indoor_E1-5", "251122-Viken_Indoor_E1-6", "251122-Viken_Indoor_E1-7", 
         "251122-Viken_Indoor_E1-8", "251122-Viken_Indoor_E1-9", "251122-Viken_Indoor_E1-10", "251122-Viken_Indoor_E1-11", "251122-Viken_Indoor_E1-12", "251122-Viken_Indoor_E1-13", "251122-Viken_Indoor_E1-14", 
         "251122-Viken_Indoor_E1-15", "251122-Viken_Indoor_E1-16", "251122-Viken_Indoor_E1-17", "251122-Viken_Indoor_E1-18", "251122-Viken_Indoor_E1-19", "251122-Viken_Indoor_E1-20", "251122-Viken_Indoor_E1-21", 
         "251122-Viken_Indoor_E1-22", "251122-Viken_Indoor_E1-23", "251122-Viken_Indoor_E1-24", "251122-Viken_Indoor_E1-25", "251122-Viken_Indoor_E1-26", "251122-Viken_Indoor_E1-27", "251122-Viken_Indoor_E1-28", 
